@@ -58,13 +58,20 @@ class _WalletPageState extends State<WalletPage> {
 
       if (ruffIndex < 0) {
         ruffIndex = 0;
-        tokenList.insert(0, UserToken(name: 'RUFF', type: '', value: 0.0));
+        tokenList.insert(
+          0,
+          UserToken(
+            name: 'RUFF',
+            type: '',
+            amount: '0',
+          ),
+        );
       }
 
-      var sysCount = tokenList.elementAt(ruffIndex).value;
+      var sysCount = tokenList.elementAt(ruffIndex).amount;
       setState(() {
         _tokenList = tokenList;
-        _sysCount = sysCount.toString();
+        _sysCount = sysCount;
       });
     } catch (e) {
       _scaffoldKey.currentState.showSnackBar(
@@ -332,7 +339,7 @@ class _WalletPageState extends State<WalletPage> {
                     ),
                   ),
                   Text(
-                    token.value.toString(),
+                    token.amount,
                     style: TextStyle(
                       fontSize: 16,
                       color: Colors.black54,
