@@ -25,8 +25,9 @@ import 'pages/backup_mnemonic.dart';
 import 'pages/app_main_container.dart';
 
 void main() {
-  JsChainLib.init();
   runApp(MyApp());
+
+  JsChainLib.init();
 
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,

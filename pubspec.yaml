@@ -20,7 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^0.1.2
-  flutter_webview_plugin: ^0.3.5
+  flutter_webview_plugin: ^0.3.10+1
   bip32: ^1.0.5
   bip39: ^1.0.3
   shared_preferences: ^0.5.3

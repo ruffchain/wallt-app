@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 
 import 'package:flutter_webview_plugin/flutter_webview_plugin.dart';
@@ -44,10 +45,18 @@ class JsChainLib {
 
   static Future _init() async {
     try {
+      var evalJavascript = new Completer();
+      _webView.onStateChanged.listen((viewState) async {
+        if (viewState.type == WebViewState.finishLoad) {
+          final jsLibCode =
+              await rootBundle.loadString('assets/js-lib/ruff-chain.min.js');
+          await _webView.evalJavascript(jsLibCode);
+          evalJavascript.complete();
+        }
+      });
+
       await _webView.launch('about:blank', withJavascript: true, hidden: true);
-      final jsLibCode =
-          await rootBundle.loadString('assets/js-lib/ruff-chain.min.js');
-      await _webView.evalJavascript(jsLibCode);
+      await evalJavascript.future;
     } catch (e) {
       print(e.toString());
     }
