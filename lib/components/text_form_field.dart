@@ -25,7 +25,7 @@ class CustomTextField extends StatelessWidget {
     this.suffixIcon,
     this.keyboardType = TextInputType.text,
     this.minLines,
-    this.maxLines,
+    this.maxLines = 1,
   });
 
   @override
