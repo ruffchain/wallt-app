@@ -43,6 +43,7 @@ flutter_icons:
   android: true
   ios: true
   image_path: "assets/images/app_icon.png"
+  image_path_ios: "assets/images/app_icon.jpg"
 
 flutter:
   uses-material-design: true
