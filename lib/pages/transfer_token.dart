@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ruff_wallet/common/chain_utils.dart';
 import 'package:ruff_wallet/common/constant.dart';
+import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/common/wallet_account.dart';
 import 'package:ruff_wallet/components/button.dart';
 import 'package:ruff_wallet/components/confirm_dialog.dart';
@@ -70,7 +71,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
   Future<bool> _asyncValidate() async {
     Loading.show(context);
     var address = _addressController.text;
-    _addressValid = await JsChainLib.isValidAddress(address);
+    _addressValid = await isValidAddress(address);
     Loading.hide(context);
     return _formKey.currentState.validate();
   }
@@ -91,7 +92,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
         try {
           var res = await transferToken(
             from: address,
-            to: _addressController.text,
+            to: rmAddressPrefix(_addressController.text),
             count: _tokenCountController.text,
             fee: _feeController.text,
             privateKey: privateKey,

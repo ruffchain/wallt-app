@@ -19,6 +19,12 @@ class _VersionLogPageState extends State<VersionLogPage> {
         child: Column(
           children: <Widget>[
             _buildLogRow(
+              '1.1.0 版本（2020.02.13）',
+              [
+                '一系列更新和优化',
+              ],
+            ),
+            _buildLogRow(
               '1.0.0 版本（2019.10.18）',
               [
                 '支持创建钱包和导入钱包',

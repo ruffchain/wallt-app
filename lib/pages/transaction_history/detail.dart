@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:ruff_wallet/common/utils.dart';
 
 class TransactionDetailPage extends StatefulWidget {
   static const routeName = 'TransactionDetailPage';
@@ -47,8 +48,8 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
         _transferViewRow('交易时间', timeStr),
         _transferViewRow('交易方法', txContent['method']),
         _transferViewRow('交易金额', txContent['value'] + ' RUFF'),
-        _transferViewRow('发起人', txContent['caller']),
-        _transferViewRow('收款人', txContent['input']['to']),
+        _transferViewRow('发起人', addAddressPrefix(txContent['caller'])),
+        _transferViewRow('收款人', addAddressPrefix(txContent['input']['to'])),
         _transferViewRow('矿工费用', txContent['fee'] + ' RUFF'),
         _transferViewRow(
           '交易Hash',

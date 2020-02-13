@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ruff_wallet/common/constant.dart';
+import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/common/wallet_account.dart';
 import 'package:ruff_wallet/components/button.dart';
 import 'package:ruff_wallet/components/input_password_dialog.dart';
@@ -141,6 +142,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
   }
 
   Widget addressBox() {
+    var address = addAddressPrefix(_accountInfo.address);
     return Container(
       width: double.infinity,
       padding: EdgeInsets.symmetric(
@@ -160,7 +162,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
                     fontSize: 16,
                   ),
                 ),
-                Text(_accountInfo.address),
+                Text(address),
               ],
             ),
           ),
@@ -170,7 +172,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
             color: Colors.black87,
             onPressed: () async {
               await Clipboard.setData(
-                ClipboardData(text: _accountInfo.address),
+                ClipboardData(text: address),
               );
               _scaffoldKey.currentState.hideCurrentSnackBar();
               _scaffoldKey.currentState.showSnackBar(

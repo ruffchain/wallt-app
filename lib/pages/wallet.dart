@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:ruff_wallet/common/chain_info_api.dart';
 import 'package:ruff_wallet/common/constant.dart';
+import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/model/user_token.dart';
 import 'package:ruff_wallet/pages/account_list.dart';
 import 'package:ruff_wallet/pages/receive_token.dart';
@@ -180,7 +181,7 @@ class _WalletPageState extends State<WalletPage> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text(_address),
+                Text(addAddressPrefix(_address)),
                 SizedBox(height: 2),
                 Text(
                   _sysCount + ' RUFF',

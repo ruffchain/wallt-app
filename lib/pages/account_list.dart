@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ruff_wallet/common/constant.dart';
+import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/components/button.dart';
 import 'package:ruff_wallet/pages/account_manager.dart';
 import 'package:ruff_wallet/pages/create_wallet.dart';
@@ -98,7 +99,7 @@ class _AccountListPageState extends State<AccountListPage> {
                       child: Row(
                         children: <Widget>[
                           Expanded(
-                            child: Text(address),
+                            child: Text(addAddressPrefix(address)),
                           ),
                           IconButton(
                             padding: const EdgeInsets.all(0),

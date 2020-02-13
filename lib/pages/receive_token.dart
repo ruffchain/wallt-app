@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
+import 'package:ruff_wallet/common/utils.dart';
 
 class ReceiveTokenPage extends StatefulWidget {
   static String routeName = 'ReceiveTokenPage';
@@ -16,7 +17,7 @@ class _ReceiveTokenPageState extends State<ReceiveTokenPage> {
   @override
   Widget build(BuildContext context) {
     String address = ModalRoute.of(context).settings.arguments;
-
+    address = addAddressPrefix(address);
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
