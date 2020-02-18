@@ -113,9 +113,9 @@ class JsChainLib {
     return address;
   }
 
-  static Future<Map<String, dynamic>> signTx(
+  static Future<Map<String, dynamic>> signTransferTx(
       String txData, String privateKey) async {
-    String code = "$_jsPrefix.signTx('$txData','$privateKey')";
+    String code = "$_jsPrefix.signTransferTx('$txData','$privateKey')";
     final res = await _runJs(code);
     return jsonDecode(res);
   }
@@ -223,7 +223,7 @@ Future<Map<String, dynamic>> transferToken({
   };
   var nonce = await ChainApi.getNonce(from);
   tx['nonce'] = nonce + 1;
-  var signTxRes = await JsChainLib.signTx(jsonEncode(tx), privateKey);
+  var signTxRes = await JsChainLib.signTransferTx(jsonEncode(tx), privateKey);
   String hash = signTxRes['hash'];
   await ChainApi.sendTransaction(signTxRes['data']);
   var confirmed = await ChainApi.checkReceipt(hash);
