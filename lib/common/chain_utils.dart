@@ -107,7 +107,7 @@ class JsChainLib {
   static Future<String> addressFromPrivateKey(String privateKey) async {
     String code = "$_jsPrefix.addressFromSecretKey('$privateKey')";
     String address = await _runJs(code);
-    if (address.isEmpty || address.length != 34) {
+    if (address.isEmpty) {
       throw ('not valid privateKey');
     }
     return address;
