@@ -19,6 +19,12 @@ class _VersionLogPageState extends State<VersionLogPage> {
         child: Column(
           children: <Widget>[
             _buildLogRow(
+              '1.2.1 版本（2020.07.28）',
+              [
+                '修复：地址有效性验证的问题',
+              ],
+            ),
+            _buildLogRow(
               '1.2.0 版本（2020.02.18）',
               [
                 '修复：转账金额小数点后位数过多时失败的问题',
