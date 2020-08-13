@@ -1,6 +1,5 @@
 {
-  "@@last_modified": "2020-08-13T10:54:53.570430",
-  "@@locale": "en",
+  "@@last_modified": "2020-08-13T15:05:49.669346",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -9,6 +8,21 @@
   },
   "hello": "Hello",
   "@hello": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsPrimary": "Loading failed, please try again.",
+  "@termsPrimary": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgreeConfirm": "I have carefully read and agree to the above agreement.",
+  "@termsAgreeConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgree": "Agree",
+  "@termsAgree": {
     "type": "text",
     "placeholders": {}
   }

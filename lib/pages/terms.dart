@@ -6,6 +6,7 @@ import 'package:ruff_wallet/pages/app_main_container.dart';
 import 'package:ruff_wallet/pages/init_wallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_inappbrowser/flutter_inappbrowser.dart';
+import '../common/app_localizations.dart';
 
 class TermsPage extends StatefulWidget {
   static const String routeName = 'TermsPage';
@@ -71,7 +72,7 @@ class _TermsPageState extends State<TermsPage> {
                 child: SizedBox(
                   width: double.infinity,
                   child: myPrimaryButton(
-                    '加载失败，点击重试',
+                    AppLocalizations.of(context).termsPrimary,
                     onPressed: () {
                       setState(() {
                         _loadFailed = false;
@@ -132,13 +133,20 @@ class _TermsPageState extends State<TermsPage> {
                 value: _agree,
                 onChanged: _loadFailed || _loading ? null : _toggleAgree,
               ),
-              Text('我已仔细阅读并同意以上协议'),
+              Expanded(
+                child: Text(
+                  AppLocalizations.of(context).termsAgreeConfirm,
+                  softWrap: true,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ),
             ],
           ),
           SizedBox(
             width: double.infinity,
             child: myPrimaryButton(
-              '同意',
+              AppLocalizations.of(context).termsAgree,
               onPressed: _agree ? _agreeTerms : null,
             ),
           ),

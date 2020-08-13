@@ -1,7 +1,7 @@
 {
   "@@last_modified": "2020-08-13T10:54:53.570430",
   "@@locale": "zh",
-  "title": "Hello world App",
+  "title": "Ruff钱包",
   "@title": {
     "description": "The application title",
     "type": "text",
@@ -9,6 +9,25 @@
   },
   "hello": "Hello",
   "@hello": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsPrimary": "加载失败，点击重试",
+  "@termsPrimary": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgreeConfirm": "我已仔细阅读并同意以上协议",
+  "@termsAgreeConfirm": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgree": "同意",
+  "@termsAgree": {
+    "description": "",
     "type": "text",
     "placeholders": {}
   }

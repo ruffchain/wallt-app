@@ -1,7 +1,7 @@
 {
   "@@last_modified": "2020-08-13T10:54:53.570430",
   "@@locale": "en",
-  "title": "Hello world App",
+  "title": "Ruff Wallet",
   "@title": {
     "description": "The application title",
     "type": "text",
@@ -9,6 +9,24 @@
   },
   "hello": "Hello",
   "@hello": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsPrimary": "Loading failed, please try again.",
+  "@termsPrimary": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgreeConfirm": "I have carefully read and agree to the above agreement ",
+  "@termsAgreeConfirm": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "termsAgree": "Agree",
+  "@terms_agree": {
+    "description": "",
     "type": "text",
     "placeholders": {}
   }

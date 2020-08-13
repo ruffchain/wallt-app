@@ -2,6 +2,8 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:ruff_wallet/common/app_localizations.dart';
 
 import 'package:ruff_wallet/common/chain_utils.dart';
 import 'package:ruff_wallet/common/theme_data.dart';
@@ -23,6 +25,7 @@ import 'pages/create_wallet.dart';
 import 'pages/import_wallet.dart';
 import 'pages/backup_mnemonic.dart';
 import 'pages/app_main_container.dart';
+import 'common/app_localizations.dart';
 
 void main() {
   runApp(MyApp());
@@ -45,8 +48,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      localizationsDelegates: [
+        AppLocalizationsDelegate(),
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate
+      ],
+      supportedLocales: [Locale("en"), Locale("zh")],
+      onGenerateTitle: (BuildContext context) =>
+          AppLocalizations.of(context).title,
       theme: genThemeData(),
-      title: 'Ruff Wallet',
+      // title: 'Ruff Wallet',
       routes: {
         '/': (_) => const SplashPage(),
         SplashPage.routeName: (_) => const SplashPage(),

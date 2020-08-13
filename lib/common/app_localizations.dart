@@ -28,6 +28,21 @@ class AppLocalizations {
   String get hello {
     return Intl.message('Hello', name: 'hello');
   }
+
+  String get termsPrimary {
+    return Intl.message('Loading failed, please try again.',
+        name: 'termsPrimary');
+  }
+
+  String get termsAgreeConfirm {
+    return Intl.message(
+        'I have carefully read and agree to the above agreement.',
+        name: 'termsAgreeConfirm');
+  }
+
+  String get termsAgree {
+    return Intl.message("Agree", name: 'termsAgree');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
