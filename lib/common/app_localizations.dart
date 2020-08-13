@@ -43,6 +43,14 @@ class AppLocalizations {
   String get termsAgree {
     return Intl.message("Agree", name: 'termsAgree');
   }
+
+  String get initWalletPrimBtn {
+    return Intl.message("Create Wallet", name: 'initWalletPrimBtn');
+  }
+
+  String get initWalletSecBtn {
+    return Intl.message("Import Wallet", name: 'initWalletSecBtn');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

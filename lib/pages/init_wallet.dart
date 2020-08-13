@@ -3,6 +3,8 @@ import 'package:ruff_wallet/components/button.dart';
 import 'package:ruff_wallet/pages/create_wallet.dart';
 import 'package:ruff_wallet/pages/import_wallet.dart';
 
+import '../common/app_localizations.dart';
+
 class InitWalletPage extends StatefulWidget {
   static const String routeName = 'InitWalletPage';
 
@@ -42,7 +44,7 @@ class _InitWalletPageState extends State<InitWalletPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   myPrimaryButton(
-                    '创建钱包',
+                    AppLocalizations.of(context).initWalletPrimBtn,
                     onPressed: () {
                       Navigator.of(context)
                           .pushNamed(CreateWalletPage.routeName);
@@ -51,7 +53,7 @@ class _InitWalletPageState extends State<InitWalletPage> {
                   ),
                   Container(height: 40),
                   mySecondaryButton(
-                    '导入钱包',
+                    AppLocalizations.of(context).initWalletSecBtn,
                     onPressed: () {
                       Navigator.of(context)
                           .pushNamed(ImportWalletPage.routeName);

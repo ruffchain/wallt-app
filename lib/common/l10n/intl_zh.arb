@@ -30,5 +30,15 @@
     "description": "",
     "type": "text",
     "placeholders": {}
+  },
+  "initWalletPrimBtn": "创建钱包",
+  "@initWalletPrimBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "initWalletSecBtn": "导入钱包",
+  "@initWalletSecBtn": {
+    "type": "text",
+    "placeholders": {}
   }
 }

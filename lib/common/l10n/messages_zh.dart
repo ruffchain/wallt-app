@@ -22,6 +22,8 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "hello" : MessageLookupByLibrary.simpleMessage("Hello"),
+    "initWalletPrimBtn" : MessageLookupByLibrary.simpleMessage("创建钱包"),
+    "initWalletSecBtn" : MessageLookupByLibrary.simpleMessage("导入钱包"),
     "termsAgree" : MessageLookupByLibrary.simpleMessage("同意"),
     "termsAgreeConfirm" : MessageLookupByLibrary.simpleMessage("我已仔细阅读并同意以上协议"),
     "termsPrimary" : MessageLookupByLibrary.simpleMessage("加载失败，点击重试"),

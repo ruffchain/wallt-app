@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-13T15:05:49.669346",
+  "@@last_modified": "2020-08-13T15:52:44.192145",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -23,6 +23,16 @@
   },
   "termsAgree": "Agree",
   "@termsAgree": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "initWalletPrimBtn": "Create Wallet",
+  "@initWalletPrimBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "initWalletSecBtn": "Import Wallet",
+  "@initWalletSecBtn": {
     "type": "text",
     "placeholders": {}
   }

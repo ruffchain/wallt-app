@@ -29,5 +29,15 @@
     "description": "",
     "type": "text",
     "placeholders": {}
+  },
+  "initWalletPrimBtn": "Create Wallet",
+  "@initWalletPrimBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "initWalletSecBtn": "Import Wallet",
+  "@initWalletSecBtn": {
+    "type": "text",
+    "placeholders": {}
   }
 }
