@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ruff_wallet/components/button.dart';
 import 'package:ruff_wallet/components/text_form_field.dart';
 import 'package:ruff_wallet/pages/backup_mnemonic.dart';
+import '../common/app_localizations.dart';
 
 class CreateWalletPage extends StatefulWidget {
   static const String routeName = 'CreateWalletPage';
@@ -46,24 +47,32 @@ class _CreateWalletPageState extends State<CreateWalletPage> {
         children: [
           CustomTextField(
             controller: _passwordController,
-            labelText: '密码',
-            helperText: '不少于8位字符，建议混合大小写字母，数字，符号',
-            obscureText: true,
+            labelText: AppLocalizations.of(context).createWalletLabelText,
+            helperText: AppLocalizations.of(context).createWalletHelperText,
+            obscureText: false,
+            maxLines: 1,
             validator: (value) {
-              if (value.isEmpty) return '密码不能为空';
-              if (value.length < 8) return '不少于8位字符，建议混合大小写字母，数字，符号';
+              if (value.isEmpty)
+                return AppLocalizations.of(context)
+                    .createWalletInValidatorEmpty;
+              if (value.length < 8)
+                return AppLocalizations.of(context)
+                    .createWalletInValidatorLength;
               return null;
             },
           ),
           const SizedBox(height: 24.0),
           CustomTextField(
             controller: _passwordConfirmController,
-            labelText: '确认密码',
-            helperText: '再次输入密码以确认',
+            labelText:
+                AppLocalizations.of(context).createWalletConfirmLabelText,
+            helperText:
+                AppLocalizations.of(context).createWalletConfirmHelperText,
             obscureText: true,
             validator: (value) {
               if (_passwordConfirmController.text != _passwordController.text)
-                return '密码不一致';
+                return AppLocalizations.of(context)
+                    .createWalletConfirmValidator;
               return null;
             },
           ),
@@ -74,7 +83,7 @@ class _CreateWalletPageState extends State<CreateWalletPage> {
     Widget submitButton = SizedBox(
       width: double.infinity,
       child: myPrimaryButton(
-        '创建',
+        AppLocalizations.of(context).createWalletSubmit,
         onPressed: () {
           if (_formKey.currentState.validate()) {
             Navigator.of(context).pushNamed(BackupMnemonicPage.routeName,
@@ -93,7 +102,7 @@ class _CreateWalletPageState extends State<CreateWalletPage> {
           children: <Widget>[
             Icon(Icons.account_balance_wallet),
             Container(width: 5),
-            Text('创建钱包')
+            Text(AppLocalizations.of(context).createWalletTitle)
           ],
         ),
         centerTitle: true,
@@ -111,8 +120,10 @@ class _CreateWalletPageState extends State<CreateWalletPage> {
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          infoLine('• 密码用于加密保护私钥、转账等，请设置高强度密码。'),
-                          infoLine('• RUFF不存储密码，也无法帮您找回密码，请务必牢记。'),
+                          infoLine(AppLocalizations.of(context)
+                              .createWalletInfoLine1),
+                          infoLine(AppLocalizations.of(context)
+                              .createWalletInfoLine2),
                           Container(height: 30),
                           form,
                         ],

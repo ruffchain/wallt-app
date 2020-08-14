@@ -40,5 +40,60 @@
   "@initWalletSecBtn": {
     "type": "text",
     "placeholders": {}
+  },
+  "createWalletLabelText": "密码",
+  "@createWalletLabelText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletHelperText": "不少于8位字符，建议混合大小写字母，数字，符号",
+  "@createWalletHelperText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInValidatorEmpty": "密码不能为空",
+  "@createWalletInValidatorEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInValidatorLength": "不少于8位字符，建议混合大小写字母，数字，符号",
+  "@createWalletInValidatorLength": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmLabelText": "确认密码",
+  "@createWalletConfirmLabelText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmHelperText": "再次输入密码以确认",
+  "@createWalletConfirmHelperText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmValidator": "密码不一致",
+  "@createWalletConfirmValidator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletSubmit": "创建",
+  "@createWalletSubmit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletTitle": "创建钱包",
+  "@createWalletTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInfoLine1": "• 密码用于加密保护私钥、转账等，请设置高强度密码。 ",
+  "@createWalletInfoLine1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInfoLine2": "• RUFF不存储密码，也无法帮您找回密码，请务必牢记。",
+  "@createWalletInfoLine2": {
+    "type": "text",
+    "placeholders": {}
   }
 }

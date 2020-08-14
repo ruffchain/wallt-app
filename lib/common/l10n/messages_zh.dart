@@ -21,6 +21,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "createWalletConfirmHelperText" : MessageLookupByLibrary.simpleMessage("再次输入密码以确认"),
+    "createWalletConfirmLabelText" : MessageLookupByLibrary.simpleMessage("确认密码"),
+    "createWalletConfirmValidator" : MessageLookupByLibrary.simpleMessage("密码不一致"),
+    "createWalletHelperText" : MessageLookupByLibrary.simpleMessage("不少于8位字符，建议混合大小写字母，数字，符号"),
+    "createWalletInValidatorEmpty" : MessageLookupByLibrary.simpleMessage("密码不能为空"),
+    "createWalletInValidatorLength" : MessageLookupByLibrary.simpleMessage("不少于8位字符，建议混合大小写字母，数字，符号"),
+    "createWalletInfoLine1" : MessageLookupByLibrary.simpleMessage("• 密码用于加密保护私钥、转账等，请设置高强度密码。 "),
+    "createWalletInfoLine2" : MessageLookupByLibrary.simpleMessage("• RUFF不存储密码，也无法帮您找回密码，请务必牢记。"),
+    "createWalletLabelText" : MessageLookupByLibrary.simpleMessage("密码"),
+    "createWalletSubmit" : MessageLookupByLibrary.simpleMessage("创建"),
+    "createWalletTitle" : MessageLookupByLibrary.simpleMessage("创建钱包"),
     "hello" : MessageLookupByLibrary.simpleMessage("Hello"),
     "initWalletPrimBtn" : MessageLookupByLibrary.simpleMessage("创建钱包"),
     "initWalletSecBtn" : MessageLookupByLibrary.simpleMessage("导入钱包"),

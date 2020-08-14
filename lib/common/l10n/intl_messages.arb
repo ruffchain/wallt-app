@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-13T15:52:44.192145",
+  "@@last_modified": "2020-08-14T15:58:12.573994",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -33,6 +33,61 @@
   },
   "initWalletSecBtn": "Import Wallet",
   "@initWalletSecBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletLabelText": "Password",
+  "@createWalletLabelText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletHelperText": "Mixing upper/lower case letters, numbers and symbols, length >= 8",
+  "@createWalletHelperText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInValidatorEmpty": "Empty password",
+  "@createWalletInValidatorEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInValidatorLength": "Mixing upper/lower case letters, numbers and symbols, length >= 8",
+  "@createWalletInValidatorLength": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmLabelText": "Confirm Password",
+  "@createWalletConfirmLabelText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmHelperText": "Please Input Password Again",
+  "@createWalletConfirmHelperText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletConfirmValidator": "Password not match",
+  "@createWalletConfirmValidator": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletSubmit": "Create",
+  "@createWalletSubmit": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletTitle": "Create Wallet",
+  "@createWalletTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInfoLine1": "Password is used to protect the SECRET KEY, please choose a strong one. ",
+  "@createWalletInfoLine1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "createWalletInfoLine2": "Ruff won't store the password, either help to get it back. Please keep it safe.",
+  "@createWalletInfoLine2": {
     "type": "text",
     "placeholders": {}
   }
