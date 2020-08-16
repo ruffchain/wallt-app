@@ -14,6 +14,7 @@ import 'package:ruff_wallet/components/loading.dart';
 import 'package:ruff_wallet/components/text_form_field.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../common/app_localizations.dart';
 
 class TransferTokenPage extends StatefulWidget {
   static String routeName = 'TransferTokenPage';
@@ -31,39 +32,40 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
   bool _addressValid = false;
 
   String _validateAddress(value) {
-    if (value.isEmpty) return '请输入';
-    if (!_addressValid) return '收款地址无效，请重新输入';
+    if (value.isEmpty) return AppLocalizations.of(context).transferTokenEnter;
+    if (!_addressValid)
+      return AppLocalizations.of(context).transferTokenInvalidAddr;
     return null;
   }
 
   String _validateTokenCount(String value) {
-    if (value.isEmpty) return '请输入';
+    if (value.isEmpty) return AppLocalizations.of(context).transferTokenEnter;
     double count = double.tryParse(value);
     if (count == null) {
-      return '请输入有效的数字';
+      return AppLocalizations.of(context).transferTokenEnterValid;
     }
     if (count == 0) {
-      return '请输入数量';
+      return AppLocalizations.of(context).transferTokenEnterAmount;
     }
     var s = value.split('.');
     if (s.length > 1 && s.elementAt(1).length > 9) {
-      return 'Token精度输入最多9位';
+      return AppLocalizations.of(context).transferTokenErrPrecision;
     }
     return null;
   }
 
   String _validateFee(value) {
-    if (value.isEmpty) return '请输入';
+    if (value.isEmpty) return AppLocalizations.of(context).transferTokenEnter;
     double count = double.tryParse(value);
     if (count == null) {
-      return '请输入有效的数字';
+      return AppLocalizations.of(context).transferTokenEnterValid;
     }
     if (count < 0.1) {
-      return '请输入≥0.1的Gasfee';
+      return AppLocalizations.of(context).transferTokenErrGasfee;
     }
     var s = value.split('.');
     if (s.length > 1 && s.elementAt(1).length > 9) {
-      return 'Token精度输入最多9位';
+      return AppLocalizations.of(context).transferTokenErrPrecision;
     }
     return null;
   }
@@ -102,10 +104,14 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
           if (res['confirmed']) {
             showModal(
               context: context,
-              title: '交易已确认',
-              content: '交易Hash值：' + res['hash'],
+              title:
+                  AppLocalizations.of(context).transferTokenConfirmModalTitle,
+              content: AppLocalizations.of(context)
+                      .transferTokenConfirmModalContent +
+                  res['hash'],
               showCancel: false,
-              confirmText: '关闭',
+              confirmText:
+                  AppLocalizations.of(context).transferTokenConfirmModalClose,
               confirm: () {
                 _formKey.currentState.reset();
               },
@@ -113,11 +119,15 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
           } else {
             showModal(
               context: context,
-              title: '交易待确认',
-              content: '交易发送成功，但是在短时间内还没获取到交易成功执行的信息，请自行确认交易是否被链执行。交易Hash值：' +
+              title:
+                  AppLocalizations.of(context).transferTokenConfirmModalTitle,
+              content: AppLocalizations.of(context)
+                      .transferTokenUnconfirmModalContent +
                   res['hash'],
-              cancelText: '关闭',
-              confirmText: '复制Hash',
+              cancelText:
+                  AppLocalizations.of(context).transferTokenUnconfirmModalClose,
+              confirmText:
+                  AppLocalizations.of(context).transferTokenUnconfirmModalCopy,
               confirm: (bool confirmed) async {
                 if (confirmed) {
                   await Clipboard.setData(
@@ -126,7 +136,8 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
                   _scaffoldKey.currentState.hideCurrentSnackBar();
                   _scaffoldKey.currentState.showSnackBar(
                     SnackBar(
-                      content: Text('复制成功'),
+                      content: Text(AppLocalizations.of(context)
+                          .transferTokenUnconfirmModalCopyOK),
                       duration: Duration(milliseconds: 1000),
                     ),
                   );
@@ -151,19 +162,19 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
       _addressController.text = barcode;
     } on PlatformException catch (e) {
       if (e.code == BarcodeScanner.CameraAccessDenied) {
-        res = '请在手机设置中开启应用的相机权限，才能正常使用扫码功能。';
+        res = AppLocalizations.of(context).transferTokenScanDenied;
       } else {
-        res = '相机访问出错';
+        res = AppLocalizations.of(context).transferTokenScanAccessErr;
       }
     } on FormatException {
       // 'null (User returned using the "back"-button before scanning anything. )
     } catch (e) {
-      res = '相机访问出错';
+      res = AppLocalizations.of(context).transferTokenScanAccessErr;
     }
     if (res.isNotEmpty) {
       showModal(
         context: context,
-        title: '出错',
+        title: AppLocalizations.of(context).transferTokenScanErr,
         content: res,
         showCancel: false,
       );
@@ -175,7 +186,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: const Text('RUFF 转账'),
+        title: Text(AppLocalizations.of(context).transferTokenTransfer),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -202,8 +213,10 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
               const SizedBox(height: 10),
               CustomTextField(
                 controller: _addressController,
-                labelText: '收款地址',
-                helperText: '请输入收款地址',
+                labelText:
+                    AppLocalizations.of(context).transferTokenFormAddressLabel,
+                helperText:
+                    AppLocalizations.of(context).transferTokenFormAddressHelper,
                 validator: _validateAddress,
                 suffixIcon: GestureDetector(
                   onTap: _scan,
@@ -213,8 +226,10 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
               const SizedBox(height: 24.0),
               CustomTextField(
                 controller: _tokenCountController,
-                labelText: 'Token 数量',
-                helperText: '请输入转账数量',
+                labelText:
+                    AppLocalizations.of(context).transferTokenFormTokenLabel,
+                helperText:
+                    AppLocalizations.of(context).transferTokenFormTokenHelper,
                 validator: _validateTokenCount,
                 keyboardType: TextInputType.numberWithOptions(
                   decimal: true,
@@ -224,7 +239,8 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
               CustomTextField(
                 controller: _feeController,
                 labelText: 'Gas Fee (RUFF)',
-                helperText: '请输入 ≥ 0.1的矿工费用',
+                helperText:
+                    AppLocalizations.of(context).transferTokenFormGasHelper,
                 validator: _validateFee,
                 keyboardType: TextInputType.numberWithOptions(
                   decimal: true,
@@ -242,7 +258,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
     return SizedBox(
       width: double.infinity,
       child: myPrimaryButton(
-        '开始转账',
+        AppLocalizations.of(context).transferTokenStart,
         onPressed: _submit,
       ),
     );

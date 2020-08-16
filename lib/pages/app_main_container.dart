@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:package_info/package_info.dart';
 import 'package:pub_semver/pub_semver.dart';
+import 'package:ruff_wallet/common/app_localizations.dart';
 import 'package:ruff_wallet/common/constant.dart';
 import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/pages/mine/mine.dart';
@@ -94,11 +95,13 @@ class _AppMainContainerState extends State<AppMainContainer> {
       items: [
         BottomNavigationBarItem(
           icon: Icon(Icons.account_balance_wallet),
-          title: Text('钱包'),
+          title:
+              Text(AppLocalizations.of(context).appMainContainerNavBarWallet),
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.account_box),
-          title: Text('我的'),
+          title:
+              Text(AppLocalizations.of(context).appMainContainerNavBarAccount),
         )
       ],
       currentIndex: _layoutSelection.index,
@@ -123,7 +126,7 @@ class _AppMainContainerState extends State<AppMainContainer> {
             Container(
               padding: EdgeInsets.only(left: 20, top: 20, right: 20),
               child: Text(
-                '必须更新才能继续使用本软件',
+                AppLocalizations.of(context).appMainContainerOutdateText,
                 style: TextStyle(fontSize: 16),
               ),
             ),
@@ -135,7 +138,7 @@ class _AppMainContainerState extends State<AppMainContainer> {
                 launchUrl(Config.AppDownloadPageUrl);
               },
               child: Text(
-                '去更新',
+                AppLocalizations.of(context).appMainContainerOutdateBtn,
                 style: TextStyle(
                   color: AppPrimaryColor,
                   fontSize: 18.0,

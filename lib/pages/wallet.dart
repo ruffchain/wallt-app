@@ -11,6 +11,7 @@ import 'package:ruff_wallet/pages/receive_token.dart';
 import 'package:ruff_wallet/pages/transaction_history/index.dart';
 import 'package:ruff_wallet/pages/transfer_token.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../common/app_localizations.dart';
 
 class WalletPage extends StatefulWidget {
   const WalletPage({Key key}) : super(key: key);
@@ -77,7 +78,7 @@ class _WalletPageState extends State<WalletPage> {
     } catch (e) {
       _scaffoldKey.currentState.showSnackBar(
         SnackBar(
-          content: Text('请检查网络连接'),
+          content: Text(AppLocalizations.of(context).walletSnackBar),
           duration: Duration(milliseconds: 2000),
         ),
       );
@@ -203,7 +204,7 @@ class _WalletPageState extends State<WalletPage> {
     return Row(
       children: <Widget>[
         _buildToolBarItem(
-          '转账',
+          AppLocalizations.of(context).walletHeaderBarPayment,
           icon: Icons.payment,
           onTap: () {
             Navigator.of(context).pushNamed(TransferTokenPage.routeName);
@@ -211,7 +212,7 @@ class _WalletPageState extends State<WalletPage> {
         ),
         _toolBarDivider(),
         _buildToolBarItem(
-          '收款',
+          AppLocalizations.of(context).walletHeaderBarReceive,
           icon: Icons.local_atm,
           onTap: () {
             Navigator.of(context).pushNamed(
@@ -222,7 +223,7 @@ class _WalletPageState extends State<WalletPage> {
         ),
         _toolBarDivider(),
         _buildToolBarItem(
-          '交易',
+          AppLocalizations.of(context).walletHeaderBarTransaction,
           icon: Icons.unfold_less,
           onTap: () {
             Navigator.of(context).pushNamed(
@@ -305,7 +306,7 @@ class _WalletPageState extends State<WalletPage> {
                       ),
                       child: Center(
                         child: Text(
-                          '资产列表为空',
+                          AppLocalizations.of(context).walletListEmpty,
                           style: TextStyle(
                             color: Colors.black45,
                           ),

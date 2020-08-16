@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-16T21:29:48.677183",
+  "@@last_modified": "2020-08-18T10:37:23.866084",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -273,6 +273,466 @@
   },
   "importWalletConfirmHelper": "Enter the password again to confirm",
   "@importWalletConfirmHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerNavBarWallet": "Wallet",
+  "@appMainContainerNavBarWallet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerNavBarAccount": "Account",
+  "@appMainContainerNavBarAccount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerOutdateText": "You must update to continue using the software",
+  "@appMainContainerOutdateText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerOutdateBtn": "To Update",
+  "@appMainContainerOutdateBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListTitle": "Wallet Management",
+  "@accountListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListBtnCreate": "Create Wallet",
+  "@accountListBtnCreate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListBtnImport": "Import Wallet",
+  "@accountListBtnImport": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerTitle": "Manage Wallet",
+  "@accountManagerTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine1": "Backup Mnemonics",
+  "@accountManagerActionLine1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine2": "Backup KeyStore",
+  "@accountManagerActionLine2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine3": "Backup PrivateKey",
+  "@accountManagerActionLine3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerDelete": "Delete Wallet",
+  "@accountManagerDelete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerAddress": "Wallet Address",
+  "@accountManagerAddress": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerSnackBar": "Address Copy Succeed",
+  "@accountManagerSnackBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitleKeystore": "keystore",
+  "@backupAccountTitleKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitleMnemonic": "mnemonic",
+  "@backupAccountTitleMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitlePrivatekey": "private key",
+  "@backupAccountTitlePrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountSnackbar": "Copy Succeed",
+  "@backupAccountSnackbar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitle": "Backup ",
+  "@backupAccountTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescPrivatekey": "Obtaining the private key is equal to owning the property of the wallet. Please copy and keep it in a safe place. The following is the private key of the wallet",
+  "@backupAccountDescPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescMnemonic": "Mnemonics are private keys, which consist of 12-24 words. You can recover your assets through mnemonics. For the safety of your assets, please be sure to copy and store them in a safe location. Once the mnemonics are lost, they cannot be retrieved.",
+  "@backupAccountDescMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescKeystore": "Keystore file is an encrypted private key. Please copy and keep it in a safe place. Once lost, it cannot be retrieved. Here is the keystore file for the wallet.",
+  "@backupAccountDescKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountCopy": "Copy",
+  "@backupAccountCopy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnter": "Please Enter",
+  "@transferTokenEnter": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenInvalidAddr": "Invalid address, please re-enter",
+  "@transferTokenInvalidAddr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnterValid": "Please enter a valid number",
+  "@transferTokenEnterValid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnterAmount": "Please Enter Amount",
+  "@transferTokenEnterAmount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenErrPrecision": "Token precision input up to 9 bits",
+  "@transferTokenErrPrecision": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenErrGasfee": "Please input Gasfee >= 0.1",
+  "@transferTokenErrGasfee": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalTitle": "Transaction confirmed",
+  "@transferTokenConfirmModalTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalContent": "Transaction Hash",
+  "@transferTokenConfirmModalContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalClose": "Close",
+  "@transferTokenConfirmModalClose": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalTitle": "Transaction to be confirmed",
+  "@transferTokenUnconfirmModalTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalContent": "The transaction has been sent successfully, but confirmation has not been obtained in a short time. Please confirm whether the transaction has been executed by chain. Transaction Hash value:",
+  "@transferTokenUnconfirmModalContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalClose": "Close",
+  "@transferTokenUnconfirmModalClose": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalCopy": "Copy Hash ",
+  "@transferTokenUnconfirmModalCopy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalCopyOK": "Copy Succeed ",
+  "@transferTokenUnconfirmModalCopyOK": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanDenied": "Please open the camera permission of the app in the mobile phone settings to use the code scanning function normally.",
+  "@transferTokenScanDenied": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanAccessErr": "Camera access error",
+  "@transferTokenScanAccessErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanErr": "Error ",
+  "@transferTokenScanErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenTransfer": "RUFF Transfer ",
+  "@transferTokenTransfer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormAddressLabel": "To Address ",
+  "@transferTokenFormAddressLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormAddressHelper": "Please enter the receiving Address ",
+  "@transferTokenFormAddressHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormTokenLabel": "Token Amount ",
+  "@transferTokenFormTokenLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormTokenHelper": "Please enter the transfer amount ",
+  "@transferTokenFormTokenHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormGasHelper": "Please input the miner's fee ≥ 0.1 ",
+  "@transferTokenFormGasHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenStart": "Start Transfer",
+  "@transferTokenStart": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenTitle": "Receive Token",
+  "@receiveTokenTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenQRCode": "Scan QR code to transfer token to me",
+  "@receiveTokenQRCode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenSnackBar": "Address copied successfully",
+  "@receiveTokenSnackBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailTitle": "Transaction Details",
+  "@txHistoryDetailTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailTime": "Trading Time",
+  "@txHistoryDetailTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailMethod": "Transaction Method",
+  "@txHistoryDetailMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailAmount": "Transaction Amount",
+  "@txHistoryDetailAmount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailCaller": "Sendor",
+  "@txHistoryDetailCaller": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailReceiver": "Payee",
+  "@txHistoryDetailReceiver": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailGasFee": "Gas Fee",
+  "@txHistoryDetailGasFee": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailHash": "Transaction Hash",
+  "@txHistoryDetailHash": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailBlock": "Block Number",
+  "@txHistoryDetailBlock": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailCopyOK": "Copy Succeed",
+  "@txHistoryDetailCopyOK": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTitle": "Transaction History",
+  "@txHistoryIndexTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabAll": "All",
+  "@txHistoryIndexTabAll": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabTransfer": "Transfer",
+  "@txHistoryIndexTabTransfer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabReceive": "Receive",
+  "@txHistoryIndexTabReceive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListTitle": "The network is unstable. Please try again",
+  "@txHistoryListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListNone": "No Information",
+  "@txHistoryListNone": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListLoading": "Loading completed",
+  "@txHistoryListLoading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineCommunityListTitle": "Join Community",
+  "@mineCommunityListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsTitle": "New version detected",
+  "@mineAboutUsTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsCurVersion": "Current Version",
+  "@mineAboutUsCurVersion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsLatestVersion": "Latest Version",
+  "@mineAboutUsLatestVersion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsToUpdate": "Update now?",
+  "@mineAboutUsToUpdate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsUpdated": "This is the latest version",
+  "@mineAboutUsUpdated": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutAppBar": "About Us",
+  "@mineAboutAppBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutSafeAreaVersionLog": "Version Log",
+  "@mineAboutSafeAreaVersionLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutSafeAreaVersionUpdate": "Version Update",
+  "@mineAboutSafeAreaVersionUpdate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineHelpCenter": "Help Center",
+  "@mineHelpCenter": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineJoin": "Join Community",
+  "@mineJoin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUs": "About Us",
+  "@mineAboutUs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersionLogTitle": "Version Log",
+  "@mineVersionLogTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersionVer": "Version",
+  "@mineVersionVer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion121": "Fix: address validation issue",
+  "@mineVersion121": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion120": "Fix: failed when transfer amount has too many decimal places",
+  "@mineVersion120": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion110": "Fix: Add address prefix ruff",
+  "@mineVersion110": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1001": "Fix: Support for creating and importing wallets",
+  "@mineVersion1001": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1002": "Fix: Support for backup Wallet",
+  "@mineVersion1002": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1003": "Fix: Support ruff transfer",
+  "@mineVersion1003": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "walletSnackBar": "Please check the network connection",
+  "@walletSnackBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "walletHeaderBarPayment": "Transfer",
+  "@walletHeaderBarPayment": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "walletHeaderBarReceive": "Receive",
+  "@walletHeaderBarReceive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "walletHeaderBarTransaction": "Transactions",
+  "@walletHeaderBarTransaction": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "walletListEmpty": "Asset list is empty",
+  "@walletListEmpty": {
     "type": "text",
     "placeholders": {}
   }

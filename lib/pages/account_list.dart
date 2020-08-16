@@ -6,6 +6,7 @@ import 'package:ruff_wallet/pages/account_manager.dart';
 import 'package:ruff_wallet/pages/create_wallet.dart';
 import 'package:ruff_wallet/pages/import_wallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../common/app_localizations.dart';
 
 class AccountListPage extends StatefulWidget {
   static const String routeName = 'AccountList';
@@ -58,7 +59,7 @@ class _AccountListPageState extends State<AccountListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('钱包管理'),
+        title: Text(AppLocalizations.of(context).accountListTitle),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -123,7 +124,7 @@ class _AccountListPageState extends State<AccountListPage> {
                 children: [
                   Expanded(
                     child: mySecondaryButton(
-                      '创建钱包',
+                      AppLocalizations.of(context).accountListBtnCreate,
                       onPressed: () {
                         Navigator.of(context)
                             .pushNamed(CreateWalletPage.routeName);
@@ -135,7 +136,7 @@ class _AccountListPageState extends State<AccountListPage> {
                   ),
                   Expanded(
                     child: myPrimaryButton(
-                      '导入钱包',
+                      AppLocalizations.of(context).accountListBtnImport,
                       onPressed: () {
                         Navigator.of(context)
                             .pushNamed(ImportWalletPage.routeName);

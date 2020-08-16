@@ -4,6 +4,7 @@ import 'package:date_format/date_format.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ruff_wallet/common/utils.dart';
+import '../../common/app_localizations.dart';
 
 class TransactionDetailPage extends StatefulWidget {
   static const routeName = 'TransactionDetailPage';
@@ -24,7 +25,7 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('交易详情'),
+        title: Text(AppLocalizations.of(context).txHistoryDetailTitle),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
@@ -45,18 +46,25 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
     );
     return Column(
       children: <Widget>[
-        _transferViewRow('交易时间', timeStr),
-        _transferViewRow('交易方法', txContent['method']),
-        _transferViewRow('交易金额', txContent['value'] + ' RUFF'),
-        _transferViewRow('发起人', addAddressPrefix(txContent['caller'])),
-        _transferViewRow('收款人', addAddressPrefix(txContent['input']['to'])),
-        _transferViewRow('矿工费用', txContent['fee'] + ' RUFF'),
         _transferViewRow(
-          '交易Hash',
+            AppLocalizations.of(context).txHistoryDetailTime, timeStr),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailMethod,
+            txContent['method']),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailAmount,
+            txContent['value'] + ' RUFF'),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailCaller,
+            addAddressPrefix(txContent['caller'])),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailReceiver,
+            addAddressPrefix(txContent['input']['to'])),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailGasFee,
+            txContent['fee'] + ' RUFF'),
+        _transferViewRow(
+          AppLocalizations.of(context).txHistoryDetailHash,
           tx['hash'],
           copy: true,
         ),
-        _transferViewRow('交易所在区块', tx['blocknumber'].toString()),
+        _transferViewRow(AppLocalizations.of(context).txHistoryDetailBlock,
+            tx['blocknumber'].toString()),
       ],
     );
   }
@@ -100,7 +108,8 @@ class _TransactionDetailPageState extends State<TransactionDetailPage> {
                 _scaffoldKey.currentState.hideCurrentSnackBar();
                 _scaffoldKey.currentState.showSnackBar(
                   SnackBar(
-                    content: Text('复制成功'),
+                    content: Text(
+                        AppLocalizations.of(context).txHistoryDetailCopyOK),
                     duration: Duration(milliseconds: 500),
                   ),
                 );
