@@ -140,5 +140,145 @@
   "@backupMnemonicSafeAreaConfirm": {
     "type": "text",
     "placeholders": {}
+  },
+  "importWalletMnemonic": "请输入助记词",
+  "@importWalletMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletKeystore": "请输入Keystore",
+  "@importWalletKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletPrivatekey": "请输入私钥",
+  "@importWalletPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwd": "请输入密码",
+  "@importWalletValidPwd": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwdLength": "不少于8位字符，建议混合大小写字母，数字，符号",
+  "@importWalletValidPwdLength": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwdEqual": "密码不一致",
+  "@importWalletValidPwdEqual": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportMnemonic": "无效的助记词",
+  "@importWalletImportMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportKeystore": "密码无法解开Keystore,请正确输入密码和keystore内容",
+  "@importWalletImportKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportPrivatekey": "无效的私钥",
+  "@importWalletImportPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidate": "钱包已存在，无需重复导入",
+  "@importWalletValidate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidateErr": "出错:",
+  "@importWalletValidateErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTitle": "导入钱包",
+  "@importWalletTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabMnemonic": "助记词",
+  "@importWalletTabMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabKeystore": "Keystore",
+  "@importWalletTabKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabPrivatekey": "私钥",
+  "@importWalletTabPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletButton": "开始导入",
+  "@importWalletButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormLabel": "助记词",
+  "@importWalletFormLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormHelper": "请输入助记词，按空格分隔",
+  "@importWalletFormHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPasswordLabel": "设置钱包密码",
+  "@importWalletFormPasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPasswordHelper": "不少于8位字符，建议混合大小写字母，数字，符号",
+  "@importWalletFormPasswordHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystoreLabel": "Keystore",
+  "@importWalletFormKeystoreLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystoreHelper": "请输入Keystore内容",
+  "@importWalletFormKeystoreHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystorePasswordLabel": "keystore密码",
+  "@importWalletFormKeystorePasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystorePasswordHelper": "keystore密码会作为钱包密码",
+  "@importWalletFormKeystorePasswordHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPrivatekeyLabel": "私钥",
+  "@importWalletFormPrivatekeyLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPrivatekeyHelper": "请输入明文私钥",
+  "@importWalletFormPrivatekeyHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletConfirmText": "确认密码",
+  "@importWalletConfirmText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletConfirmHelper": "再次输入密码以确认",
+  "@importWalletConfirmHelper": {
+    "type": "text",
+    "placeholders": {}
   }
 }

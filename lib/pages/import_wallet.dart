@@ -1,6 +1,7 @@
 import 'package:bip39/bip39.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:ruff_wallet/common/app_localizations.dart';
 import 'package:ruff_wallet/common/chain_utils.dart';
 import 'package:ruff_wallet/common/wallet_account.dart';
 import 'package:ruff_wallet/components/button.dart';
@@ -73,13 +74,16 @@ class _ImportWalletPageState extends State<ImportWalletPage>
 
   String _validImportString(value) {
     if (_importType == ImportType.mnemonic) {
-      if (value.isEmpty) return '请输入助记词';
+      if (value.isEmpty)
+        return AppLocalizations.of(context).importWalletMnemonic;
     }
     if (_importType == ImportType.keystore) {
-      if (value.isEmpty) return '请输入Keystore';
+      if (value.isEmpty)
+        return AppLocalizations.of(context).importWalletKeystore;
     }
     if (_importType == ImportType.privateKey) {
-      if (value.isEmpty) return '请输入私钥';
+      if (value.isEmpty)
+        return AppLocalizations.of(context).importWalletPrivatekey;
     }
     if (_importStringAsyncValidMsg.isNotEmpty) {
       return _importStringAsyncValidMsg;
@@ -88,8 +92,9 @@ class _ImportWalletPageState extends State<ImportWalletPage>
   }
 
   String _validPassword(value) {
-    if (value.isEmpty) return '请输入密码';
-    if (value.length < 8) return '不少于8位字符，建议混合大小写字母，数字，符号';
+    if (value.isEmpty) return AppLocalizations.of(context).importWalletValidPwd;
+    if (value.length < 8)
+      return AppLocalizations.of(context).importWalletValidPwdLength;
     if (_passwordAsyncValidMsg.isNotEmpty) {
       return _passwordAsyncValidMsg;
     }
@@ -97,9 +102,9 @@ class _ImportWalletPageState extends State<ImportWalletPage>
   }
 
   String _validPasswordConfirm(value) {
-    if (value.isEmpty) return '请输入密码';
+    if (value.isEmpty) return AppLocalizations.of(context).importWalletValidPwd;
     if (_passwordConfirmController.text != _passwordController.text)
-      return '密码不一致';
+      return AppLocalizations.of(context).importWalletValidPwdEqual;
     return null;
   }
 
@@ -113,20 +118,24 @@ class _ImportWalletPageState extends State<ImportWalletPage>
 
     if (_importType == ImportType.mnemonic) {
       if (!validateMnemonic(importString)) {
-        _importStringAsyncValidMsg = '无效的助记词';
+        _importStringAsyncValidMsg =
+            AppLocalizations.of(context).importWalletImportMnemonic;
       }
     } else if (_importType == ImportType.keystore) {
       try {
         await JsChainLib.privateKeyFromKeyStore(importString, password);
       } catch (e) {
-        _importStringAsyncValidMsg = '密码无法解开Keystore,请正确输入密码和keystore内容';
-        _passwordAsyncValidMsg = '密码无法解开Keystore,请正确输入密码和keystore内容';
+        _importStringAsyncValidMsg =
+            AppLocalizations.of(context).importWalletImportKeystore;
+        _passwordAsyncValidMsg =
+            AppLocalizations.of(context).importWalletImportKeystore;
       }
     } else if (_importType == ImportType.privateKey) {
       try {
         await JsChainLib.addressFromPrivateKey(importString);
       } catch (e) {
-        _importStringAsyncValidMsg = '无效的私钥';
+        _importStringAsyncValidMsg =
+            AppLocalizations.of(context).importWalletImportPrivatekey;
       }
     }
 
@@ -145,11 +154,12 @@ class _ImportWalletPageState extends State<ImportWalletPage>
           Navigator.of(context).pushNamedAndRemoveUntil(
               AppMainContainer.routeName, (_) => false);
         } else {
-          showInSnackBar('钱包已存在，无需重复导入');
+          showInSnackBar(AppLocalizations.of(context).importWalletValidate);
           Loading.hide(context);
         }
       } catch (e) {
-        showInSnackBar('出错:$e');
+        showInSnackBar(
+            AppLocalizations.of(context).importWalletValidateErr + '$e');
         Loading.hide(context);
       }
     } else {
@@ -162,15 +172,15 @@ class _ImportWalletPageState extends State<ImportWalletPage>
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: const Text('导入钱包'),
+        title: Text(AppLocalizations.of(context).importWalletTitle),
         centerTitle: true,
         bottom: TabBar(
           onTap: _changeImportType,
           indicatorColor: Colors.white54,
           tabs: [
-            Tab(text: '助记词'),
-            Tab(text: 'Keystore'),
-            Tab(text: '私钥'),
+            Tab(text: AppLocalizations.of(context).importWalletTabMnemonic),
+            Tab(text: AppLocalizations.of(context).importWalletTabKeystore),
+            Tab(text: AppLocalizations.of(context).importWalletTabPrivatekey),
           ],
           controller: _tabController,
         ),
@@ -193,7 +203,7 @@ class _ImportWalletPageState extends State<ImportWalletPage>
                   child: SizedBox(
                     width: double.infinity,
                     child: myPrimaryButton(
-                      '开始导入',
+                      AppLocalizations.of(context).importWalletButton,
                       onPressed: _startImportWallet,
                     ),
                   ),
@@ -207,22 +217,32 @@ class _ImportWalletPageState extends State<ImportWalletPage>
   }
 
   Widget _buildForm() {
-    var _importStringLabelText = "助记词";
-    var _importStringHelperText = "请输入助记词，按空格分隔";
-    var _passwordLabelText = '设置钱包密码';
-    var _passwordHelpText = '不少于8位字符，建议混合大小写字母，数字，符号';
+    var _importStringLabelText =
+        AppLocalizations.of(context).importWalletFormLabel;
+    var _importStringHelperText =
+        AppLocalizations.of(context).importWalletFormHelper;
+    var _passwordLabelText =
+        AppLocalizations.of(context).importWalletFormPasswordLabel;
+    var _passwordHelpText =
+        AppLocalizations.of(context).importWalletFormPasswordHelper;
 
     if (_importType == ImportType.keystore) {
-      _importStringLabelText = "Keystore";
-      _importStringHelperText = "请输入Keystore内容";
+      _importStringLabelText =
+          AppLocalizations.of(context).importWalletFormKeystoreLabel;
+      _importStringHelperText =
+          AppLocalizations.of(context).importWalletFormKeystoreHelper;
 
-      _passwordLabelText = 'keystore密码';
-      _passwordHelpText = 'keystore密码会作为钱包密码';
+      _passwordLabelText =
+          AppLocalizations.of(context).importWalletFormKeystorePasswordLabel;
+      _passwordHelpText =
+          AppLocalizations.of(context).importWalletFormKeystorePasswordHelper;
     }
 
     if (_importType == ImportType.privateKey) {
-      _importStringLabelText = "私钥";
-      _importStringHelperText = "请输入明文私钥";
+      _importStringLabelText =
+          AppLocalizations.of(context).importWalletFormPrivatekeyLabel;
+      _importStringHelperText =
+          AppLocalizations.of(context).importWalletFormPrivatekeyHelper;
     }
     return Form(
       key: _formKey,
@@ -248,8 +268,9 @@ class _ImportWalletPageState extends State<ImportWalletPage>
           if (_importType != ImportType.keystore)
             CustomTextField(
               controller: _passwordConfirmController,
-              labelText: '确认密码',
-              helperText: "再次输入密码以确认",
+              labelText: AppLocalizations.of(context).importWalletConfirmText,
+              helperText:
+                  AppLocalizations.of(context).importWalletConfirmHelper,
               validator: _validPasswordConfirm,
               obscureText: true,
             ),

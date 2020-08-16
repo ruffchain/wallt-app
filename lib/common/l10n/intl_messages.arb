@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-16T17:38:54.584315",
+  "@@last_modified": "2020-08-16T21:29:48.677183",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -133,6 +133,146 @@
   },
   "backupMnemonicSafeAreaConfirm": "Finished Copying",
   "@backupMnemonicSafeAreaConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletMnemonic": "Mnemonics",
+  "@importWalletMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletKeystore": "Keystore",
+  "@importWalletKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletPrivatekey": "Private Key",
+  "@importWalletPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwd": "Please Input Password",
+  "@importWalletValidPwd": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwdLength": "<= 8 characters, mixed case letters, numbers and symbols recommended",
+  "@importWalletValidPwdLength": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidPwdEqual": "Password inconsistency",
+  "@importWalletValidPwdEqual": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportMnemonic": "Invalid mnemonics",
+  "@importWalletImportMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportKeystore": "The password cannot unlock keysore. Please enter the password and keystore correctly",
+  "@importWalletImportKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletImportPrivatekey": "Invalid Private Key",
+  "@importWalletImportPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidate": "Wallet already exists, no need to import again",
+  "@importWalletValidate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletValidateErr": "Error:",
+  "@importWalletValidateErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTitle": "Import Wallet",
+  "@importWalletTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabMnemonic": "Mnemonics",
+  "@importWalletTabMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabKeystore": "Keystore",
+  "@importWalletTabKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletTabPrivatekey": "Private Key",
+  "@importWalletTabPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletButton": "Start Importing",
+  "@importWalletButton": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormLabel": "Mnemonics",
+  "@importWalletFormLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormHelper": "Please enter mnemonics separated by spaces",
+  "@importWalletFormHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPasswordLabel": "Wallet Password",
+  "@importWalletFormPasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPasswordHelper": "<= 8 characters, mixed case letters, numbers and symbols recommended",
+  "@importWalletFormPasswordHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystoreLabel": "Keystore",
+  "@importWalletFormKeystoreLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystoreHelper": "Please input Keystore content",
+  "@importWalletFormKeystoreHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystorePasswordLabel": "Keystore Password",
+  "@importWalletFormKeystorePasswordLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormKeystorePasswordHelper": "The keystore password will be used as the wallet password",
+  "@importWalletFormKeystorePasswordHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPrivatekeyLabel": "Private Key",
+  "@importWalletFormPrivatekeyLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletFormPrivatekeyHelper": "Please enter the plaintext private key",
+  "@importWalletFormPrivatekeyHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletConfirmText": "Confirm Pasword",
+  "@importWalletConfirmText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "importWalletConfirmHelper": "Enter the password again to confirm",
+  "@importWalletConfirmHelper": {
     "type": "text",
     "placeholders": {}
   }

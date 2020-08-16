@@ -151,6 +151,136 @@ class AppLocalizations {
     return Intl.message("Finished Copying",
         name: 'backupMnemonicSafeAreaConfirm');
   }
+
+  String get importWalletMnemonic {
+    return Intl.message("Mnemonics", name: 'importWalletMnemonic');
+  }
+
+  String get importWalletKeystore {
+    return Intl.message("Keystore", name: 'importWalletKeystore');
+  }
+
+  String get importWalletPrivatekey {
+    return Intl.message("Private Key", name: 'importWalletPrivatekey');
+  }
+
+  String get importWalletValidPwd {
+    return Intl.message("Please Input Password", name: 'importWalletValidPwd');
+  }
+
+  String get importWalletValidPwdLength {
+    return Intl.message(
+        "<= 8 characters, mixed case letters, numbers and symbols recommended",
+        name: 'importWalletValidPwdLength');
+  }
+
+  String get importWalletValidPwdEqual {
+    return Intl.message("Password inconsistency",
+        name: 'importWalletValidPwdEqual');
+  }
+
+  String get importWalletImportMnemonic {
+    return Intl.message("Invalid mnemonics",
+        name: 'importWalletImportMnemonic');
+  }
+
+  String get importWalletImportKeystore {
+    return Intl.message(
+        "The password cannot unlock keysore. Please enter the password and keystore correctly",
+        name: 'importWalletImportKeystore');
+  }
+
+  String get importWalletImportPrivatekey {
+    return Intl.message("Invalid Private Key",
+        name: 'importWalletImportPrivatekey');
+  }
+
+  String get importWalletValidate {
+    return Intl.message("Wallet already exists, no need to import again",
+        name: 'importWalletValidate');
+  }
+
+  String get importWalletValidateErr {
+    return Intl.message("Error:", name: 'importWalletValidateErr');
+  }
+
+  String get importWalletTitle {
+    return Intl.message("Import Wallet", name: 'importWalletTitle');
+  }
+
+  String get importWalletTabMnemonic {
+    return Intl.message("Mnemonics", name: 'importWalletTabMnemonic');
+  }
+
+  String get importWalletTabKeystore {
+    return Intl.message("Keystore", name: 'importWalletTabKeystore');
+  }
+
+  String get importWalletTabPrivatekey {
+    return Intl.message("Private Key", name: 'importWalletTabPrivatekey');
+  }
+
+  String get importWalletButton {
+    return Intl.message("Start Importing", name: 'importWalletButton');
+  }
+
+  String get importWalletFormLabel {
+    return Intl.message("Mnemonics", name: 'importWalletFormLabel');
+  }
+
+  String get importWalletFormHelper {
+    return Intl.message("Please enter mnemonics separated by spaces",
+        name: 'importWalletFormHelper');
+  }
+
+  String get importWalletFormPasswordLabel {
+    return Intl.message("Wallet Password",
+        name: 'importWalletFormPasswordLabel');
+  }
+
+  String get importWalletFormPasswordHelper {
+    return Intl.message(
+        "<= 8 characters, mixed case letters, numbers and symbols recommended",
+        name: 'importWalletFormPasswordHelper');
+  }
+
+  String get importWalletFormKeystoreLabel {
+    return Intl.message("Keystore", name: 'importWalletFormKeystoreLabel');
+  }
+
+  String get importWalletFormKeystoreHelper {
+    return Intl.message("Please input Keystore content",
+        name: 'importWalletFormKeystoreHelper');
+  }
+
+  String get importWalletFormKeystorePasswordLabel {
+    return Intl.message("Keystore Password",
+        name: 'importWalletFormKeystorePasswordLabel');
+  }
+
+  String get importWalletFormKeystorePasswordHelper {
+    return Intl.message(
+        "The keystore password will be used as the wallet password",
+        name: 'importWalletFormKeystorePasswordHelper');
+  }
+
+  String get importWalletFormPrivatekeyLabel {
+    return Intl.message("Private Key", name: 'importWalletFormPrivatekeyLabel');
+  }
+
+  String get importWalletFormPrivatekeyHelper {
+    return Intl.message("Please enter the plaintext private key",
+        name: 'importWalletFormPrivatekeyHelper');
+  }
+
+  String get importWalletConfirmText {
+    return Intl.message("Confirm Pasword", name: 'importWalletConfirmText');
+  }
+
+  String get importWalletConfirmHelper {
+    return Intl.message("Enter the password again to confirm",
+        name: 'importWalletConfirmHelper');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {
