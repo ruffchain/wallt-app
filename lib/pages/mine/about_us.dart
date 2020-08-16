@@ -10,6 +10,7 @@ import 'package:ruff_wallet/components/loading.dart';
 import 'package:ruff_wallet/pages/mine/version_log.dart';
 import 'package:http/http.dart' as http;
 import 'package:ruff_wallet/common/config.dart' as Config;
+import '../../common/app_localizations.dart';
 
 class AboutUsPage extends StatefulWidget {
   static const String routeName = 'AboutUsPage';
@@ -53,8 +54,12 @@ class _AboutUsPageState extends State<AboutUsPage> {
     if (_version != latestVersion) {
       showModal(
         context: context,
-        title: '检测到新版本',
-        content: '当前版本 $_version ,最新版本 $latestVersion ,去更新？',
+        title: AppLocalizations.of(context).mineAboutUsTitle,
+        content: AppLocalizations.of(context).mineAboutUsCurVersion +
+            ' $_version ,' +
+            AppLocalizations.of(context).mineAboutUsLatestVersion +
+            '$latestVersion ,' +
+            AppLocalizations.of(context).mineAboutUsToUpdate,
         confirm: (bool confirmed) {
           if (confirmed) {
             launchUrl(Config.AppDownloadPageUrl);
@@ -65,7 +70,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
       showModal(
         context: context,
         showCancel: false,
-        title: '当前已经是最新版本',
+        title: AppLocalizations.of(context).mineAboutUsUpdated,
       );
     }
   }
@@ -74,7 +79,7 @@ class _AboutUsPageState extends State<AboutUsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('关于我们'),
+        title: Text(AppLocalizations.of(context).mineAboutAppBar),
         centerTitle: true,
       ),
       body: SafeArea(
@@ -84,12 +89,15 @@ class _AboutUsPageState extends State<AboutUsPage> {
               child: SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
-                    actionRow('版本日志', onTap: () {
+                    actionRow(
+                        AppLocalizations.of(context)
+                            .mineAboutSafeAreaVersionLog, onTap: () {
                       Navigator.of(context).pushNamed(VersionLogPage.routeName);
                     }),
                     if (Platform.isAndroid)
                       actionRow(
-                        '版本更新',
+                        AppLocalizations.of(context)
+                            .mineAboutSafeAreaVersionUpdate,
                         onTap: _checkUpdate,
                       ),
                   ],
@@ -100,7 +108,9 @@ class _AboutUsPageState extends State<AboutUsPage> {
               height: 60,
               child: Center(
                 child: Text(
-                  '当前版本：' + _version,
+                  AppLocalizations.of(context).mineAboutUsCurVersion +
+                      ' ' +
+                      _version,
                   style: TextStyle(color: Colors.black54),
                 ),
               ),

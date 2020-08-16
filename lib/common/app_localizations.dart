@@ -281,6 +281,388 @@ class AppLocalizations {
     return Intl.message("Enter the password again to confirm",
         name: 'importWalletConfirmHelper');
   }
+
+  String get appMainContainerNavBarWallet {
+    return Intl.message("Wallet", name: 'appMainContainerNavBarWallet');
+  }
+
+  String get appMainContainerNavBarAccount {
+    return Intl.message("Account", name: 'appMainContainerNavBarAccount');
+  }
+
+  String get appMainContainerOutdateText {
+    return Intl.message("You must update to continue using the software",
+        name: 'appMainContainerOutdateText');
+  }
+
+  String get appMainContainerOutdateBtn {
+    return Intl.message("To Update", name: 'appMainContainerOutdateBtn');
+  }
+
+  String get accountListTitle {
+    return Intl.message("Wallet Management", name: 'accountListTitle');
+  }
+
+  String get accountListBtnCreate {
+    return Intl.message("Create Wallet", name: 'accountListBtnCreate');
+  }
+
+  String get accountListBtnImport {
+    return Intl.message("Import Wallet", name: 'accountListBtnImport');
+  }
+
+  String get accountManagerTitle {
+    return Intl.message("Manage Wallet", name: 'accountManagerTitle');
+  }
+
+  String get accountManagerActionLine1 {
+    return Intl.message("Backup Mnemonics", name: 'accountManagerActionLine1');
+  }
+
+  String get accountManagerActionLine2 {
+    return Intl.message("Backup KeyStore", name: 'accountManagerActionLine2');
+  }
+
+  String get accountManagerActionLine3 {
+    return Intl.message("Backup PrivateKey", name: 'accountManagerActionLine3');
+  }
+
+  String get accountManagerDelete {
+    return Intl.message("Delete Wallet", name: 'accountManagerDelete');
+  }
+
+  String get accountManagerAddress {
+    return Intl.message("Wallet Address", name: 'accountManagerAddress');
+  }
+
+  String get accountManagerSnackBar {
+    return Intl.message("Address Copy Succeed", name: 'accountManagerSnackBar');
+  }
+
+  String get backupAccountTitleKeystore {
+    return Intl.message("keystore", name: 'backupAccountTitleKeystore');
+  }
+
+  String get backupAccountTitleMnemonic {
+    return Intl.message("mnemonic", name: 'backupAccountTitleMnemonic');
+  }
+
+  String get backupAccountTitlePrivatekey {
+    return Intl.message("private key", name: 'backupAccountTitlePrivatekey');
+  }
+
+  String get backupAccountSnackbar {
+    return Intl.message("Copy Succeed", name: 'backupAccountSnackbar');
+  }
+
+  String get backupAccountTitle {
+    return Intl.message("Backup ", name: 'backupAccountTitle');
+  }
+
+  String get backupAccountDescPrivatekey {
+    return Intl.message(
+        "Obtaining the private key is equal to owning the property of the wallet. Please copy and keep it in a safe place. The following is the private key of the wallet",
+        name: 'backupAccountDescPrivatekey');
+  }
+
+  String get backupAccountDescMnemonic {
+    return Intl.message(
+        "Mnemonics are private keys, which consist of 12-24 words. You can recover your assets through mnemonics. For the safety of your assets, please be sure to copy and store them in a safe location. Once the mnemonics are lost, they cannot be retrieved.",
+        name: 'backupAccountDescMnemonic');
+  }
+
+  String get backupAccountDescKeystore {
+    return Intl.message(
+        "Keystore file is an encrypted private key. Please copy and keep it in a safe place. Once lost, it cannot be retrieved. Here is the keystore file for the wallet.",
+        name: 'backupAccountDescKeystore');
+  }
+
+  String get backupAccountCopy {
+    return Intl.message("Copy", name: 'backupAccountCopy');
+  }
+
+  String get transferTokenEnter {
+    return Intl.message("Please Enter", name: 'transferTokenEnter');
+  }
+
+  String get transferTokenInvalidAddr {
+    return Intl.message("Invalid address, please re-enter",
+        name: 'transferTokenInvalidAddr');
+  }
+
+  String get transferTokenEnterValid {
+    return Intl.message("Please enter a valid number",
+        name: 'transferTokenEnterValid');
+  }
+
+  String get transferTokenEnterAmount {
+    return Intl.message("Please Enter Amount",
+        name: 'transferTokenEnterAmount');
+  }
+
+  String get transferTokenErrPrecision {
+    return Intl.message("Token precision input up to 9 bits",
+        name: 'transferTokenErrPrecision');
+  }
+
+  String get transferTokenErrGasfee {
+    return Intl.message("Please input Gasfee >= 0.1",
+        name: 'transferTokenErrGasfee');
+  }
+
+  String get transferTokenConfirmModalTitle {
+    return Intl.message("Transaction confirmed",
+        name: 'transferTokenConfirmModalTitle');
+  }
+
+  String get transferTokenConfirmModalContent {
+    return Intl.message("Transaction Hash",
+        name: 'transferTokenConfirmModalContent');
+  }
+
+  String get transferTokenConfirmModalClose {
+    return Intl.message("Close", name: 'transferTokenConfirmModalClose');
+  }
+
+  String get transferTokenUnconfirmModalTitle {
+    return Intl.message("Transaction to be confirmed",
+        name: 'transferTokenUnconfirmModalTitle');
+  }
+
+  String get transferTokenUnconfirmModalContent {
+    return Intl.message(
+        "The transaction has been sent successfully, but confirmation has not been obtained in a short time. Please confirm whether the transaction has been executed by chain. Transaction Hash value:",
+        name: 'transferTokenUnconfirmModalContent');
+  }
+
+  String get transferTokenUnconfirmModalClose {
+    return Intl.message("Close", name: 'transferTokenUnconfirmModalClose');
+  }
+
+  String get transferTokenUnconfirmModalCopy {
+    return Intl.message("Copy Hash ", name: 'transferTokenUnconfirmModalCopy');
+  }
+
+  String get transferTokenUnconfirmModalCopyOK {
+    return Intl.message("Copy Succeed ",
+        name: 'transferTokenUnconfirmModalCopyOK');
+  }
+
+  String get transferTokenScanDenied {
+    return Intl.message(
+        "Please open the camera permission of the app in the mobile phone settings to use the code scanning function normally.",
+        name: 'transferTokenScanDenied');
+  }
+
+  String get transferTokenScanAccessErr {
+    return Intl.message("Camera access error",
+        name: 'transferTokenScanAccessErr');
+  }
+
+  String get transferTokenScanErr {
+    return Intl.message("Error ", name: 'transferTokenScanErr');
+  }
+
+  String get transferTokenTransfer {
+    return Intl.message("RUFF Transfer ", name: 'transferTokenTransfer');
+  }
+
+  String get transferTokenFormAddressLabel {
+    return Intl.message("To Address ", name: 'transferTokenFormAddressLabel');
+  }
+
+  String get transferTokenFormAddressHelper {
+    return Intl.message("Please enter the receiving Address ",
+        name: 'transferTokenFormAddressHelper');
+  }
+
+  String get transferTokenFormTokenLabel {
+    return Intl.message("Token Amount ", name: 'transferTokenFormTokenLabel');
+  }
+
+  String get transferTokenFormTokenHelper {
+    return Intl.message("Please enter the transfer amount ",
+        name: 'transferTokenFormTokenHelper');
+  }
+
+  String get transferTokenFormGasHelper {
+    return Intl.message("Please input the miner's fee ≥ 0.1 ",
+        name: 'transferTokenFormGasHelper');
+  }
+
+  String get transferTokenStart {
+    return Intl.message("Start Transfer", name: 'transferTokenStart');
+  }
+
+  String get receiveTokenTitle {
+    return Intl.message("Receive Token", name: 'receiveTokenTitle');
+  }
+
+  String get receiveTokenQRCode {
+    return Intl.message("Scan QR code to transfer token to me",
+        name: 'receiveTokenQRCode');
+  }
+
+  String get receiveTokenSnackBar {
+    return Intl.message("Address copied successfully",
+        name: 'receiveTokenSnackBar');
+  }
+
+  String get txHistoryDetailTitle {
+    return Intl.message("Transaction Details", name: 'txHistoryDetailTitle');
+  }
+
+  String get txHistoryDetailTime {
+    return Intl.message("Trading Time", name: 'txHistoryDetailTime');
+  }
+
+  String get txHistoryDetailMethod {
+    return Intl.message("Transaction Method", name: 'txHistoryDetailMethod');
+  }
+
+  String get txHistoryDetailAmount {
+    return Intl.message("Transaction Amount", name: 'txHistoryDetailAmount');
+  }
+
+  String get txHistoryDetailCaller {
+    return Intl.message("Sendor", name: 'txHistoryDetailCaller');
+  }
+
+  String get txHistoryDetailReceiver {
+    return Intl.message("Payee", name: 'txHistoryDetailReceiver');
+  }
+
+  String get txHistoryDetailGasFee {
+    return Intl.message("Gas Fee", name: 'txHistoryDetailGasFee');
+  }
+
+  String get txHistoryDetailHash {
+    return Intl.message("Transaction Hash", name: 'txHistoryDetailHash');
+  }
+
+  String get txHistoryDetailBlock {
+    return Intl.message("Block Number", name: 'txHistoryDetailBlock');
+  }
+
+  String get txHistoryDetailCopyOK {
+    return Intl.message("Copy Succeed", name: 'txHistoryDetailCopyOK');
+  }
+
+  String get txHistoryIndexTitle {
+    return Intl.message("Transaction History", name: 'txHistoryIndexTitle');
+  }
+
+  String get txHistoryIndexTabAll {
+    return Intl.message("All", name: 'txHistoryIndexTabAll');
+  }
+
+  String get txHistoryIndexTabTransfer {
+    return Intl.message("Transfer", name: 'txHistoryIndexTabTransfer');
+  }
+
+  String get txHistoryIndexTabReceive {
+    return Intl.message("Receive", name: 'txHistoryIndexTabReceive');
+  }
+
+  String get txHistoryListTitle {
+    return Intl.message("The network is unstable. Please try again",
+        name: 'txHistoryListTitle');
+  }
+
+  String get txHistoryListNone {
+    return Intl.message("No Information", name: 'txHistoryListNone');
+  }
+
+  String get txHistoryListLoading {
+    return Intl.message("Loading completed", name: 'txHistoryListLoading');
+  }
+
+  String get mineCommunityListTitle {
+    return Intl.message("Join Community", name: 'mineCommunityListTitle');
+  }
+
+  String get mineAboutUsTitle {
+    return Intl.message("New version detected", name: 'mineAboutUsTitle');
+  }
+
+  String get mineAboutUsCurVersion {
+    return Intl.message("Current Version", name: 'mineAboutUsCurVersion');
+  }
+
+  String get mineAboutUsLatestVersion {
+    return Intl.message("Latest Version", name: 'mineAboutUsLatestVersion');
+  }
+
+  String get mineAboutUsToUpdate {
+    return Intl.message("Update now?", name: 'mineAboutUsToUpdate');
+  }
+
+  String get mineAboutUsUpdated {
+    return Intl.message("This is the latest version",
+        name: 'mineAboutUsUpdated');
+  }
+
+  String get mineAboutAppBar {
+    return Intl.message("About Us", name: 'mineAboutAppBar');
+  }
+
+  String get mineAboutSafeAreaVersionLog {
+    return Intl.message("Version Log", name: 'mineAboutSafeAreaVersionLog');
+  }
+
+  String get mineAboutSafeAreaVersionUpdate {
+    return Intl.message("Version Update",
+        name: 'mineAboutSafeAreaVersionUpdate');
+  }
+
+  String get mineHelpCenter {
+    return Intl.message("Help Center", name: 'mineHelpCenter');
+  }
+
+  String get mineJoin {
+    return Intl.message("Join Community", name: 'mineJoin');
+  }
+
+  String get mineAboutUs {
+    return Intl.message("About Us", name: 'mineAboutUs');
+  }
+
+  String get mineVersionLogTitle {
+    return Intl.message("Version Log", name: 'mineVersionLogTitle');
+  }
+
+  String get mineVersionVer {
+    return Intl.message("Version", name: 'mineVersionVer');
+  }
+
+  String get mineVersion121 {
+    return Intl.message("Fix: address validation issue",
+        name: 'mineVersion121');
+  }
+
+  String get mineVersion120 {
+    return Intl.message(
+        "Fix: failed when transfer amount has too many decimal places",
+        name: 'mineVersion120');
+  }
+
+  String get mineVersion110 {
+    return Intl.message("Fix: Add address prefix ruff", name: 'mineVersion110');
+  }
+
+  String get mineVersion1001 {
+    return Intl.message("Fix: Support for creating and importing wallets",
+        name: 'mineVersion1001');
+  }
+
+  String get mineVersion1002 {
+    return Intl.message("Fix: Support for backup Wallet",
+        name: 'mineVersion1002');
+  }
+
+  String get mineVersion1003 {
+    return Intl.message("Fix: Support ruff transfer", name: 'mineVersion1003');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

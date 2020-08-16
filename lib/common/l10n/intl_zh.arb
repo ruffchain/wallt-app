@@ -280,5 +280,440 @@
   "@importWalletConfirmHelper": {
     "type": "text",
     "placeholders": {}
+  },
+  "appMainContainerNavBarWallet": "钱包",
+  "@appMainContainerNavBarWallet": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerNavBarAccount": "我的",
+  "@appMainContainerNavBarAccount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerOutdateText": "必须更新才能继续使用本软件",
+  "@appMainContainerOutdateText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "appMainContainerOutdateBtn": "去更新",
+  "@appMainContainerOutdateBtn": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListTitle": "钱包管理",
+  "@accountListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListBtnCreate": "创建钱包",
+  "@accountListBtnCreate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountListBtnImport": "导入钱包",
+  "@accountListBtnImport": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerTitle": "管理钱包",
+  "@accountManagerTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine1": "备份助记词",
+  "@accountManagerActionLine1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine2": "备份keyStore",
+  "@accountManagerActionLine2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerActionLine3": "备份私钥",
+  "@accountManagerActionLine3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerDelete": "删除钱包",
+  "@accountManagerDelete": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerAddress": "钱包地址",
+  "@accountManagerAddress": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "accountManagerSnackBar": "地址复制成功",
+  "@accountManagerSnackBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitleKeystore": "keystore",
+  "@backupAccountTitleKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitleMnemonic": "助记词",
+  "@backupAccountTitleMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitlePrivatekey": "私钥",
+  "@backupAccountTitlePrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountSnackbar": "复制成功",
+  "@backupAccountSnackbar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountTitle": "备份 ",
+  "@backupAccountTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescPrivatekey": "助记词即是私钥，由12~24个单词组成,你可以通过助记词恢复你的资产,为了你的资产安全，请务必将在抄写并存放至安全位置,助记词一旦丢失，不可找回。",
+  "@backupAccountDescPrivatekey": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescMnemonic": "助记词即是私钥，由12~24个单词组成,你可以通过助记词恢复你的资产,为了你的资产安全，请务必将在抄写并存放至安全位置,助记词一旦丢失，不可找回。",
+  "@backupAccountDescMnemonic": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountDescKeystore": "Keystore文件是加密后的私钥，请复制并妥善保存在安全的地方，一旦丢失，无法找回。以下是钱包的Keystore文件。",
+  "@backupAccountDescKeystore": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupAccountCopy": "复制",
+  "@backupAccountCopy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnter": "请输入",
+  "@transferTokenEnter": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenInvalidAddr": "收款地址无效，请重新输入",
+  "@transferTokenInvalidAddr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnterValid": "请输入有效的数字",
+  "@transferTokenEnterValid": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenEnterAmount": "请输入数量",
+  "@transferTokenEnterAmount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenErrPrecision": "Token精度输入最多9位",
+  "@transferTokenErrPrecision": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenErrGasfee": "请输入≥0.1的Gasfee",
+  "@transferTokenErrGasfee": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalTitle": "交易已确认",
+  "@transferTokenConfirmModalTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalContent": "交易Hash值：",
+  "@transferTokenConfirmModalContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenConfirmModalClose": "关闭",
+  "@transferTokenConfirmModalClose": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalTitle": "交易待确认",
+  "@transferTokenUnconfirmModalTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalContent": "交易发送成功，但是在短时间内还没获取到交易成功执行的信息，请自行确认交易是否被链执行。交易Hash值：",
+  "@transferTokenUnconfirmModalContent": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalClose": "关闭",
+  "@transferTokenUnconfirmModalClose": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalCopy": "复制Hash ",
+  "@transferTokenUnconfirmModalCopy": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenUnconfirmModalCopyOK": "复制成功 ",
+  "@transferTokenUnconfirmModalCopyOK": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanDenied": "请在手机设置中开启应用的相机权限，才能正常使用扫码功能。",
+  "@transferTokenScanDenied": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanAccessErr": "相机访问出错",
+  "@transferTokenScanAccessErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenScanErr": "出错 ",
+  "@transferTokenScanErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenTransfer": "RUFF 转账 ",
+  "@transferTokenTransfer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormAddressLabel": "收款地址 ",
+  "@transferTokenFormAddressLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormAddressHelper": "请输入收款地址 ",
+  "@transferTokenFormAddressHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormTokenLabel": "Token 数量 ",
+  "@transferTokenFormTokenLabel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormTokenHelper": "请输入转账数量",
+  "@transferTokenFormTokenHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenFormGasHelper": "请输入 ≥ 0.1的矿工费用",
+  "@transferTokenFormGasHelper": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "transferTokenStart": "开始转账",
+  "@transferTokenStart": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenTitle": "收款",
+  "@receiveTokenTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenQRCode": "扫描二维码向我转账",
+  "@receiveTokenQRCode": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "receiveTokenSnackBar": "复制地址成功",
+  "@receiveTokenSnackBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailTitle": "交易详情",
+  "@txHistoryDetailTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailTime": "交易时间",
+  "@txHistoryDetailTime": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailMethod": "交易方法",
+  "@txHistoryDetailMethod": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailAmount": "交易金额",
+  "@txHistoryDetailAmount": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailCaller": "发起人",
+  "@txHistoryDetailCaller": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailReceiver": "收款人",
+  "@txHistoryDetailReceiver": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailGasFee": "矿工费用",
+  "@txHistoryDetailGasFee": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailHash": "交易Hash",
+  "@txHistoryDetailHash": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailBlock": "交易所在区块",
+  "@txHistoryDetailBlock": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryDetailCopyOK": "复制成功",
+  "@txHistoryDetailCopyOK": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTitle": "交易历史",
+  "@txHistoryIndexTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabAll": "全部",
+  "@txHistoryIndexTabAll": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabTransfer": "转账",
+  "@txHistoryIndexTabTransfer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryIndexTabReceive": "收款",
+  "@txHistoryIndexTabReceive": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListTitle": "网络不稳定，请重新再试",
+  "@txHistoryListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListNone": "暂无信息",
+  "@txHistoryListNone": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "txHistoryListLoading": "加载完毕",
+  "@txHistoryListLoading": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineCommunityListTitle": "加入社区",
+  "@mineCommunityListTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsTitle": "检测到新版本",
+  "@mineAboutUsTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsCurVersion": "当前版本",
+  "@mineAboutUsCurVersion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsLatestVersion": "最新版本",
+  "@mineAboutUsLatestVersion": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsToUpdate": "去更新？",
+  "@mineAboutUsToUpdate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUsUpdated": "当前已经是最新版本",
+  "@mineAboutUsUpdated": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutAppBar": "关于我们",
+  "@mineAboutAppBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutSafeAreaVersionLog": "版本日志",
+  "@mineAboutSafeAreaVersionLog": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutSafeAreaVersionUpdate": "版本更新",
+  "@mineAboutSafeAreaVersionUpdate": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineHelpCenter": "帮助中心",
+  "@mineHelpCenter": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineJoin": "加入社区",
+  "@mineJoin": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineAboutUs": "关于我们",
+  "@mineAboutUs": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersionLogTitle": "版本日志",
+  "@mineVersionLogTitle": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersionVer": "版本",
+  "@mineVersionVer": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion121": "修复：地址有效性验证的问题",
+  "@mineVersion121": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion120": "修复：转账金额小数点后位数过多时失败的问题",
+  "@mineVersion120": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion110": "地址添加前缀 ruff",
+  "@mineVersion110": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1001": "支持创建钱包和导入钱包",
+  "@mineVersion1001": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1002": "支持备份钱包",
+  "@mineVersion1002": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion1003": "支持RUFF转账",
+  "@mineVersion1003": {
+    "type": "text",
+    "placeholders": {}
   }
 }

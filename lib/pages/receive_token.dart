@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:ruff_wallet/common/utils.dart';
+import '../common/app_localizations.dart';
 
 class ReceiveTokenPage extends StatefulWidget {
   static String routeName = 'ReceiveTokenPage';
@@ -21,7 +22,7 @@ class _ReceiveTokenPageState extends State<ReceiveTokenPage> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: const Text('收款'),
+        title: Text(AppLocalizations.of(context).receiveTokenTitle),
         centerTitle: true,
       ),
       body: Center(
@@ -29,7 +30,7 @@ class _ReceiveTokenPageState extends State<ReceiveTokenPage> {
           mainAxisSize: MainAxisSize.min,
           children: <Widget>[
             Text(
-              '扫描二维码向我转账',
+              AppLocalizations.of(context).receiveTokenQRCode,
               style: TextStyle(fontSize: 20),
             ),
             SizedBox(height: 10),
@@ -56,7 +57,8 @@ class _ReceiveTokenPageState extends State<ReceiveTokenPage> {
                 _scaffoldKey.currentState.hideCurrentSnackBar();
                 _scaffoldKey.currentState.showSnackBar(
                   SnackBar(
-                    content: Text('复制地址成功'),
+                    content:
+                        Text(AppLocalizations.of(context).receiveTokenSnackBar),
                     duration: Duration(milliseconds: 1000),
                   ),
                 );

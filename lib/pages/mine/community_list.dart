@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/components/action_row.dart';
+import '../../common/app_localizations.dart';
 
 class CommunityListPage extends StatefulWidget {
   static const String routeName = 'CommunityListPage';
@@ -14,7 +15,7 @@ class _CommunityListPageState extends State<CommunityListPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('加入社区'),
+        title: Text(AppLocalizations.of(context).mineCommunityListTitle),
         centerTitle: true,
       ),
       body: SingleChildScrollView(

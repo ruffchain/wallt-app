@@ -12,6 +12,7 @@ import 'package:ruff_wallet/pages/init_wallet.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'backup_account.dart';
+import '../common/app_localizations.dart';
 
 class AccountManagerPage extends StatefulWidget {
   static const routeName = '/AccountManagerPage';
@@ -92,7 +93,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
     return Scaffold(
       key: _scaffoldKey,
       appBar: AppBar(
-        title: Text('管理钱包'),
+        title: Text(AppLocalizations.of(context).accountManagerTitle),
         centerTitle: true,
       ),
       body: _accountInfo != null ? mainView() : Container(),
@@ -111,15 +112,15 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
                   SizedBox(height: 5),
                   if (_accountInfo.mnemonicKeystore.isNotEmpty)
                     actionLine(
-                      '备份助记词',
+                      AppLocalizations.of(context).accountManagerActionLine1,
                       onTap: _backup(ImportType.mnemonic),
                     ),
                   actionLine(
-                    '备份keyStore',
+                    AppLocalizations.of(context).accountManagerActionLine2,
                     onTap: _backup(ImportType.keystore),
                   ),
                   actionLine(
-                    '备份私钥',
+                    AppLocalizations.of(context).accountManagerActionLine3,
                     onTap: _backup(ImportType.privateKey),
                   ),
                 ],
@@ -131,7 +132,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
             child: SizedBox(
               width: double.infinity,
               child: mySecondaryButton(
-                '删除钱包',
+                AppLocalizations.of(context).accountManagerDelete,
                 onPressed: _deleteAddress,
               ),
             ),
@@ -157,7 +158,7 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Text(
-                  '钱包地址',
+                  AppLocalizations.of(context).accountManagerAddress,
                   style: TextStyle(
                     fontSize: 16,
                   ),
@@ -177,7 +178,8 @@ class _AccountManagerPageState extends State<AccountManagerPage> {
               _scaffoldKey.currentState.hideCurrentSnackBar();
               _scaffoldKey.currentState.showSnackBar(
                 SnackBar(
-                  content: Text('地址复制成功'),
+                  content:
+                      Text(AppLocalizations.of(context).accountManagerSnackBar),
                   duration: Duration(milliseconds: 500),
                 ),
               );

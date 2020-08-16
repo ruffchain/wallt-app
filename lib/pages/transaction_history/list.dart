@@ -5,6 +5,7 @@ import 'package:ruff_wallet/components/confirm_dialog.dart';
 import 'package:ruff_wallet/pages/transaction_history/detail.dart';
 import 'package:ruff_wallet/pages/transaction_history/index.dart';
 import 'package:date_format/date_format.dart';
+import '../../common/app_localizations.dart';
 
 class TransactionListView extends StatefulWidget {
   final TransactionType type;
@@ -73,7 +74,7 @@ class _TransactionListViewState extends State<TransactionListView> {
     } catch (e) {
       print(e);
       showModal(
-        title: '网络不稳定，请重新再试',
+        title: AppLocalizations.of(context).txHistoryListTitle,
         context: context,
         showCancel: false,
       );
@@ -106,7 +107,7 @@ class _TransactionListViewState extends State<TransactionListView> {
                       ),
                       child: Center(
                         child: Text(
-                          '暂无信息',
+                          AppLocalizations.of(context).txHistoryListNone,
                           style: TextStyle(
                             color: Colors.black45,
                           ),
@@ -134,7 +135,7 @@ class _TransactionListViewState extends State<TransactionListView> {
     return Container(
       padding: EdgeInsets.all(15),
       child: Center(
-        child: Text('加载完毕'),
+        child: Text(AppLocalizations.of(context).txHistoryListLoading),
       ),
     );
   }

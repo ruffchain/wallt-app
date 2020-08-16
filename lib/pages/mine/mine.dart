@@ -3,6 +3,7 @@ import 'package:ruff_wallet/common/utils.dart';
 import 'package:ruff_wallet/components/action_row.dart';
 import 'package:ruff_wallet/pages/mine/about_us.dart';
 import 'package:ruff_wallet/pages/mine/community_list.dart';
+import '../../common/app_localizations.dart';
 
 class MinePage extends StatefulWidget {
   const MinePage({Key key}) : super(key: key);
@@ -36,7 +37,7 @@ class _MinePageState extends State<MinePage> {
       child: Column(
         children: <Widget>[
           actionRow(
-            '帮助中心',
+            AppLocalizations.of(context).mineHelpCenter,
             onTap: () async {
               const url =
                   'https://github.com/ruffchain/Guide/wiki/RuffChain%E9%92%B1%E5%8C%85APP%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83';
@@ -44,13 +45,13 @@ class _MinePageState extends State<MinePage> {
             },
           ),
           actionRow(
-            '加入社区',
+            AppLocalizations.of(context).mineJoin,
             onTap: () async {
               Navigator.of(context).pushNamed(CommunityListPage.routeName);
             },
           ),
           actionRow(
-            '关于我们',
+            AppLocalizations.of(context).mineAboutUs,
             onTap: () async {
               Navigator.of(context).pushNamed(AboutUsPage.routeName);
             },

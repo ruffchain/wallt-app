@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../common/app_localizations.dart';
 
 class VersionLogPage extends StatefulWidget {
   static const String routeName = 'VersionLogPage';
@@ -12,36 +13,44 @@ class _VersionLogPageState extends State<VersionLogPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('版本日志'),
+        title: Text(AppLocalizations.of(context).mineVersionLogTitle),
         centerTitle: true,
       ),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             _buildLogRow(
-              '1.2.1 版本（2020.07.28）',
+              '1.2.1' +
+                  AppLocalizations.of(context).mineVersionVer +
+                  '（2020.07.28）',
               [
-                '修复：地址有效性验证的问题',
+                AppLocalizations.of(context).mineVersion121,
               ],
             ),
             _buildLogRow(
-              '1.2.0 版本（2020.02.18）',
+              '1.2.0 ' +
+                  AppLocalizations.of(context).mineVersionVer +
+                  '（2020.02.18）',
               [
-                '修复：转账金额小数点后位数过多时失败的问题',
+                AppLocalizations.of(context).mineVersion120,
               ],
             ),
             _buildLogRow(
-              '1.1.0 版本（2020.02.13）',
+              '1.1.0 ' +
+                  AppLocalizations.of(context).mineVersionVer +
+                  '（2020.02.13）',
               [
-                '地址添加前缀 ruff',
+                AppLocalizations.of(context).mineVersion110,
               ],
             ),
             _buildLogRow(
-              '1.0.0 版本（2019.10.18）',
+              '1.0.0 ' +
+                  AppLocalizations.of(context).mineVersionVer +
+                  '（2019.10.18）',
               [
-                '支持创建钱包和导入钱包',
-                '支持备份钱包',
-                '支持RUFF转账',
+                AppLocalizations.of(context).mineVersion1001,
+                AppLocalizations.of(context).mineVersion1002,
+                AppLocalizations.of(context).mineVersion1003,
               ],
             ),
           ],

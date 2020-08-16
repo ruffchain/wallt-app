@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ruff_wallet/pages/transaction_history/list.dart';
+import '../../common/app_localizations.dart';
 
 enum TransactionType {
   all,
@@ -51,14 +52,14 @@ class _TransactionHistoryPageState extends State<TransactionHistoryPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('交易历史'),
+        title: Text(AppLocalizations.of(context).txHistoryIndexTitle),
         centerTitle: true,
         bottom: TabBar(
           indicatorColor: Colors.white54,
           tabs: [
-            Tab(text: '全部'),
-            Tab(text: '转账'),
-            Tab(text: '收款'),
+            Tab(text: AppLocalizations.of(context).txHistoryIndexTabAll),
+            Tab(text: AppLocalizations.of(context).txHistoryIndexTabTransfer),
+            Tab(text: AppLocalizations.of(context).txHistoryIndexTabReceive),
           ],
           onTap: _selectType,
           controller: _tabController,
