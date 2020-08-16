@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ruff_wallet/common/app_localizations.dart';
 import 'package:ruff_wallet/common/chain_utils.dart';
 import 'package:ruff_wallet/common/wallet_account.dart';
 import 'package:ruff_wallet/components/button.dart';
@@ -38,7 +39,7 @@ class _BackupMnemonicPageState extends State<BackupMnemonicPage> {
       Navigator.of(context)
           .pushNamedAndRemoveUntil(AppMainContainer.routeName, (_) => false);
     } catch (e) {
-      showInSnackBar('出错$e');
+      showInSnackBar(AppLocalizations.of(context).backupMnemonicErr + '$e');
       Loading.hide(context);
     }
   }
@@ -86,7 +87,7 @@ class _BackupMnemonicPageState extends State<BackupMnemonicPage> {
           children: [
             Icon(Icons.layers),
             Container(width: 5),
-            Text('备份助记词'),
+            Text(AppLocalizations.of(context).backupMnemonicAppBar),
           ],
         ),
         centerTitle: true,
@@ -101,15 +102,20 @@ class _BackupMnemonicPageState extends State<BackupMnemonicPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      infoLine('• 助记词即是私钥，由12~24个单词组成'),
-                      infoLine('• 你可以通过助记词恢复你的资产'),
-                      infoLine('• 为了你的资产安全，请务必在抄写并存放至安全位置'),
-                      infoLine('• 助记词一旦丢失，不可找回'),
+                      infoLine(AppLocalizations.of(context)
+                          .backupMnemonicSafeAreaInfo1),
+                      infoLine(AppLocalizations.of(context)
+                          .backupMnemonicSafeAreaInfo2),
+                      infoLine(AppLocalizations.of(context)
+                          .backupMnemonicSafeAreaInfo3),
+                      infoLine(AppLocalizations.of(context)
+                          .backupMnemonicSafeAreaInfo4),
                       Container(
                         padding: EdgeInsets.symmetric(vertical: 20),
                         alignment: Alignment(0, 0),
                         child: Text(
-                          '请按照顺序正确抄写并存放至安全位置',
+                          AppLocalizations.of(context)
+                              .backupMnemonicSafeAreaText1,
                           style: TextStyle(fontSize: 16),
                         ),
                       ),
@@ -127,7 +133,7 @@ class _BackupMnemonicPageState extends State<BackupMnemonicPage> {
                   SizedBox(
                     width: double.infinity,
                     child: mySecondaryButton(
-                      '取消',
+                      AppLocalizations.of(context).backupMnemonicSafeAreaCancel,
                       onPressed: () {
                         Navigator.of(context).pop();
                       },
@@ -139,7 +145,8 @@ class _BackupMnemonicPageState extends State<BackupMnemonicPage> {
                   SizedBox(
                     width: double.infinity,
                     child: myPrimaryButton(
-                      '我已抄写完毕',
+                      AppLocalizations.of(context)
+                          .backupMnemonicSafeAreaConfirm,
                       onPressed: _saveAccount,
                     ),
                   ),

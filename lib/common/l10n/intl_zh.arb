@@ -95,5 +95,50 @@
   "@createWalletInfoLine2": {
     "type": "text",
     "placeholders": {}
+  },
+  "backupMnemonicErr": "出错:",
+  "@backupMnemonicErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicAppBar": "备份助记词",
+  "@backupMnemonicAppBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo1": "• 助记词即是私钥，由12~24个单词组成",
+  "@backupMnemonicSafeAreaInfo1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo2": "• 你可以通过助记词恢复你的资产",
+  "@backupMnemonicSafeAreaInfo2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo3": "• 为了你的资产安全，请务必在抄写并存放至安全位置",
+  "@backupMnemonicSafeAreaInfo3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo4": "• 助记词一旦丢失，不可找回",
+  "@backupMnemonicSafeAreaInfo4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaText1": "请按照顺序正确抄写并存放至安全位置",
+  "@backupMnemonicSafeAreaText1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaCancel": "取消",
+  "@backupMnemonicSafeAreaCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaConfirm": "我已抄写完毕",
+  "@backupMnemonicSafeAreaConfirm": {
+    "type": "text",
+    "placeholders": {}
   }
 }

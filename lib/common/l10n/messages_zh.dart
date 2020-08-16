@@ -21,6 +21,15 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "backupMnemonicAppBar" : MessageLookupByLibrary.simpleMessage("备份助记词"),
+    "backupMnemonicErr" : MessageLookupByLibrary.simpleMessage("出错:"),
+    "backupMnemonicSafeAreaCancel" : MessageLookupByLibrary.simpleMessage("取消"),
+    "backupMnemonicSafeAreaConfirm" : MessageLookupByLibrary.simpleMessage("我已抄写完毕"),
+    "backupMnemonicSafeAreaInfo1" : MessageLookupByLibrary.simpleMessage("• 助记词即是私钥，由12~24个单词组成"),
+    "backupMnemonicSafeAreaInfo2" : MessageLookupByLibrary.simpleMessage("• 你可以通过助记词恢复你的资产"),
+    "backupMnemonicSafeAreaInfo3" : MessageLookupByLibrary.simpleMessage("• 为了你的资产安全，请务必在抄写并存放至安全位置"),
+    "backupMnemonicSafeAreaInfo4" : MessageLookupByLibrary.simpleMessage("• 助记词一旦丢失，不可找回"),
+    "backupMnemonicSafeAreaText1" : MessageLookupByLibrary.simpleMessage("请按照顺序正确抄写并存放至安全位置"),
     "createWalletConfirmHelperText" : MessageLookupByLibrary.simpleMessage("再次输入密码以确认"),
     "createWalletConfirmLabelText" : MessageLookupByLibrary.simpleMessage("确认密码"),
     "createWalletConfirmValidator" : MessageLookupByLibrary.simpleMessage("密码不一致"),

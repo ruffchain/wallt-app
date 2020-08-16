@@ -20,38 +20,33 @@ class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'en';
 
   final messages = _notInlinedMessages(_notInlinedMessages);
-  static _notInlinedMessages(_) => <String, Function>{
-        "createWalletConfirmHelperText":
-            MessageLookupByLibrary.simpleMessage("Please Input Password Again"),
-        "createWalletConfirmLabelText":
-            MessageLookupByLibrary.simpleMessage("Confirm Password"),
-        "createWalletConfirmValidator":
-            MessageLookupByLibrary.simpleMessage("Password not match"),
-        "createWalletHelperText": MessageLookupByLibrary.simpleMessage(
-            "Mixing upper/lower case letters, numbers and symbols, length >= 8"),
-        "createWalletInValidatorEmpty":
-            MessageLookupByLibrary.simpleMessage("Empty password"),
-        "createWalletInValidatorLength": MessageLookupByLibrary.simpleMessage(
-            "Mixing upper/lower case letters, numbers and symbols, length >= 8"),
-        "createWalletInfoLine1": MessageLookupByLibrary.simpleMessage(
-            "Password is used to protect the SECRET KEY, please choose a strong one. "),
-        "createWalletInfoLine2": MessageLookupByLibrary.simpleMessage(
-            "Ruff won\'t store the password, either help to get it back. Please keep it safe."),
-        "createWalletLabelText":
-            MessageLookupByLibrary.simpleMessage("Password"),
-        "createWalletSubmit": MessageLookupByLibrary.simpleMessage("Create"),
-        "createWalletTitle":
-            MessageLookupByLibrary.simpleMessage("Create Wallet"),
-        "hello": MessageLookupByLibrary.simpleMessage("Hello"),
-        "initWalletPrimBtn":
-            MessageLookupByLibrary.simpleMessage("Create Wallet"),
-        "initWalletSecBtn":
-            MessageLookupByLibrary.simpleMessage("Import Wallet"),
-        "termsAgree": MessageLookupByLibrary.simpleMessage("Agree"),
-        "termsAgreeConfirm": MessageLookupByLibrary.simpleMessage(
-            "I have carefully read and agree to the above agreement "),
-        "termsPrimary": MessageLookupByLibrary.simpleMessage(
-            "Loading failed, please try again."),
-        "title": MessageLookupByLibrary.simpleMessage("Ruff Wallet")
-      };
+  static _notInlinedMessages(_) => <String, Function> {
+    "backupMnemonicAppBar" : MessageLookupByLibrary.simpleMessage("backup Menmonics"),
+    "backupMnemonicErr" : MessageLookupByLibrary.simpleMessage("Error:"),
+    "backupMnemonicSafeAreaCancel" : MessageLookupByLibrary.simpleMessage("Cancel"),
+    "backupMnemonicSafeAreaConfirm" : MessageLookupByLibrary.simpleMessage("Finished Copying"),
+    "backupMnemonicSafeAreaInfo1" : MessageLookupByLibrary.simpleMessage("• Mnemonics are private keys, which are composed of 12-24 words"),
+    "backupMnemonicSafeAreaInfo2" : MessageLookupByLibrary.simpleMessage("• You can restore your assets by mnemonics"),
+    "backupMnemonicSafeAreaInfo3" : MessageLookupByLibrary.simpleMessage("• For the safety of your assets, please be sure to copy and store them in a safe place"),
+    "backupMnemonicSafeAreaInfo4" : MessageLookupByLibrary.simpleMessage("• Once the mnemonics are lost, it cannot be retrieved"),
+    "backupMnemonicSafeAreaText1" : MessageLookupByLibrary.simpleMessage("• Please copy word by word and store in a safe place"),
+    "createWalletConfirmHelperText" : MessageLookupByLibrary.simpleMessage("Please Input Password Again"),
+    "createWalletConfirmLabelText" : MessageLookupByLibrary.simpleMessage("Confirm Password"),
+    "createWalletConfirmValidator" : MessageLookupByLibrary.simpleMessage("Password not match"),
+    "createWalletHelperText" : MessageLookupByLibrary.simpleMessage("Mixing upper/lower case letters, numbers and symbols, length >= 8"),
+    "createWalletInValidatorEmpty" : MessageLookupByLibrary.simpleMessage("Empty password"),
+    "createWalletInValidatorLength" : MessageLookupByLibrary.simpleMessage("Mixing upper/lower case letters, numbers and symbols, length >= 8"),
+    "createWalletInfoLine1" : MessageLookupByLibrary.simpleMessage("Password is used to protect the SECRET KEY, please choose a strong one. "),
+    "createWalletInfoLine2" : MessageLookupByLibrary.simpleMessage("Ruff won\'t store the password, either help to get it back. Please keep it safe."),
+    "createWalletLabelText" : MessageLookupByLibrary.simpleMessage("Password"),
+    "createWalletSubmit" : MessageLookupByLibrary.simpleMessage("Create"),
+    "createWalletTitle" : MessageLookupByLibrary.simpleMessage("Create Wallet"),
+    "hello" : MessageLookupByLibrary.simpleMessage("Hello"),
+    "initWalletPrimBtn" : MessageLookupByLibrary.simpleMessage("Create Wallet"),
+    "initWalletSecBtn" : MessageLookupByLibrary.simpleMessage("Import Wallet"),
+    "termsAgree" : MessageLookupByLibrary.simpleMessage("Agree"),
+    "termsAgreeConfirm" : MessageLookupByLibrary.simpleMessage("I have carefully read and agree to the above agreement "),
+    "termsPrimary" : MessageLookupByLibrary.simpleMessage("Loading failed, please try again."),
+    "title" : MessageLookupByLibrary.simpleMessage("Ruff Wallet")
+  };
 }

@@ -107,6 +107,50 @@ class AppLocalizations {
         "Ruff won't store the password, either help to get it back. Please keep it safe.",
         name: 'createWalletInfoLine2');
   }
+
+  String get backupMnemonicErr {
+    return Intl.message("Error:", name: 'backupMnemonicErr');
+  }
+
+  String get backupMnemonicAppBar {
+    return Intl.message("backup Menmonics", name: 'backupMnemonicAppBar');
+  }
+
+  String get backupMnemonicSafeAreaInfo1 {
+    return Intl.message(
+        "• Mnemonics are private keys, which are composed of 12-24 words",
+        name: 'backupMnemonicSafeAreaInfo1');
+  }
+
+  String get backupMnemonicSafeAreaInfo2 {
+    return Intl.message("• You can restore your assets by mnemonics",
+        name: 'backupMnemonicSafeAreaInfo2');
+  }
+
+  String get backupMnemonicSafeAreaInfo3 {
+    return Intl.message(
+        "• For the safety of your assets, please be sure to copy and store them in a safe place",
+        name: 'backupMnemonicSafeAreaInfo3');
+  }
+
+  String get backupMnemonicSafeAreaInfo4 {
+    return Intl.message("• Once the mnemonics are lost, it cannot be retrieved",
+        name: 'backupMnemonicSafeAreaInfo4');
+  }
+
+  String get backupMnemonicSafeAreaText1 {
+    return Intl.message("• Please copy word by word and store in a safe place",
+        name: 'backupMnemonicSafeAreaText1');
+  }
+
+  String get backupMnemonicSafeAreaCancel {
+    return Intl.message("Cancel", name: 'backupMnemonicSafeAreaCancel');
+  }
+
+  String get backupMnemonicSafeAreaConfirm {
+    return Intl.message("Finished Copying",
+        name: 'backupMnemonicSafeAreaConfirm');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

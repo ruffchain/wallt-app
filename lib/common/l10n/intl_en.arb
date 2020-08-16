@@ -94,5 +94,50 @@
   "@createWalletInfoLine2": {
     "type": "text",
     "placeholders": {}
+  },
+  "backupMnemonicErr": "Error:",
+  "@backupMnemonicErr": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicAppBar": "backup Menmonics",
+  "@backupMnemonicAppBar": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo1": "• Mnemonics are private keys, which are composed of 12-24 words",
+  "@backupMnemonicSafeAreaInfo1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo2": "• You can restore your assets by mnemonics",
+  "@backupMnemonicSafeAreaInfo2": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo3": "• For the safety of your assets, please be sure to copy and store them in a safe place",
+  "@backupMnemonicSafeAreaInfo3": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaInfo4": "• Once the mnemonics are lost, it cannot be retrieved",
+  "@backupMnemonicSafeAreaInfo4": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaText1": "• Please copy word by word and store in a safe place",
+  "@backupMnemonicSafeAreaText1": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaCancel": "Cancel",
+  "@backupMnemonicSafeAreaCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "backupMnemonicSafeAreaConfirm": "Finished Copying",
+  "@backupMnemonicSafeAreaConfirm": {
+    "type": "text",
+    "placeholders": {}
   }
 }
