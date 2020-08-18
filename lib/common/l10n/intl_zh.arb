@@ -431,7 +431,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "transferTokenConfirmModalContent": "交易Hash值：",
+  "transferTokenConfirmModalContent": "交易成功! Hash值：",
   "@transferTokenConfirmModalContent": {
     "type": "text",
     "placeholders": {}
@@ -738,6 +738,36 @@
   },
   "walletListEmpty": "资产列表为空",
   "@walletListEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loadingTransferText": "\n请等待20~40秒\n交易提交执行中",
+  "@loadingTransferText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgText": "请输入钱包密码",
+  "@inputPasswordDlgText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgEmpty": "密码不能为空",
+  "@inputPasswordDlgEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgWrong": "密码错误",
+  "@inputPasswordDlgWrong": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgCancel": "取消",
+  "@inputPasswordDlgCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgConfirm": "确定",
+  "@inputPasswordDlgConfirm": {
     "type": "text",
     "placeholders": {}
   }

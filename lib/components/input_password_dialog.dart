@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ruff_wallet/common/chain_utils.dart';
 import 'package:ruff_wallet/common/constant.dart';
 import 'package:ruff_wallet/common/wallet_account.dart';
+import '../common/app_localizations.dart';
 
 class InputPassswordDialog extends StatefulWidget {
   final WalletAccount accountInfo;
@@ -68,7 +69,7 @@ class _InputPassswordDialogState extends State<InputPassswordDialog> {
             bottom: 25,
           ),
           child: Text(
-            '请输入钱包密码',
+            AppLocalizations.of(context).inputPasswordDlgText,
             style: TextStyle(
               fontSize: 18,
             ),
@@ -92,8 +93,10 @@ class _InputPassswordDialogState extends State<InputPassswordDialog> {
                   textAlign: TextAlign.center,
                   obscureText: true,
                   validator: (value) {
-                    if (value.isEmpty) return '密码不能为空';
-                    if (_passwordError) return '密码错误';
+                    if (value.isEmpty)
+                      return AppLocalizations.of(context).inputPasswordDlgEmpty;
+                    if (_passwordError)
+                      return AppLocalizations.of(context).inputPasswordDlgWrong;
                     return null;
                   },
                 ),
@@ -107,7 +110,7 @@ class _InputPassswordDialogState extends State<InputPassswordDialog> {
               child: FlatButton(
                 onPressed: _cancle,
                 child: Text(
-                  '取消',
+                  AppLocalizations.of(context).inputPasswordDlgCancel,
                   style: TextStyle(fontSize: 18.0),
                 ),
               ),
@@ -121,7 +124,7 @@ class _InputPassswordDialogState extends State<InputPassswordDialog> {
               child: FlatButton(
                 onPressed: _confirmPassword,
                 child: Text(
-                  '确定',
+                  AppLocalizations.of(context).inputPasswordDlgConfirm,
                   style: TextStyle(
                     color: AppPrimaryColor,
                     fontSize: 18.0,

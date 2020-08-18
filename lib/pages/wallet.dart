@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:ruff_wallet/common/chain_info_api.dart';
 import 'package:ruff_wallet/common/constant.dart';
 import 'package:ruff_wallet/common/utils.dart';
+import 'package:ruff_wallet/components/loading_transfer.dart';
 import 'package:ruff_wallet/model/user_token.dart';
 import 'package:ruff_wallet/pages/account_list.dart';
 import 'package:ruff_wallet/pages/receive_token.dart';
@@ -231,7 +232,7 @@ class _WalletPageState extends State<WalletPage> {
               arguments: _address,
             );
           },
-        ),
+        )
       ],
     );
   }

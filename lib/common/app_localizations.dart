@@ -684,6 +684,33 @@ class AppLocalizations {
   String get walletListEmpty {
     return Intl.message("Asset list is empty", name: 'walletListEmpty');
   }
+
+  String get loadingTransferText {
+    return Intl.message(
+        "\nPlease wait 20~40 seconds\nfor the transaction to be executed.",
+        name: 'loadingTransferText');
+  }
+
+  String get inputPasswordDlgText {
+    return Intl.message("Please Enter Wallet Password",
+        name: 'inputPasswordDlgText');
+  }
+
+  String get inputPasswordDlgEmpty {
+    return Intl.message("Password is Empty", name: 'inputPasswordDlgEmpty');
+  }
+
+  String get inputPasswordDlgWrong {
+    return Intl.message("Password is Wrong", name: 'inputPasswordDlgWrong');
+  }
+
+  String get inputPasswordDlgCancel {
+    return Intl.message("Cancel", name: 'inputPasswordDlgCancel');
+  }
+
+  String get inputPasswordDlgConfirm {
+    return Intl.message("Confirm", name: 'inputPasswordDlgConfirm');
+  }
 }
 
 class AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

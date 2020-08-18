@@ -15,6 +15,7 @@ import 'package:ruff_wallet/components/text_form_field.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../common/app_localizations.dart';
+import 'package:ruff_wallet/components/loading_transfer.dart';
 
 class TransferTokenPage extends StatefulWidget {
   static String routeName = 'TransferTokenPage';
@@ -88,7 +89,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
       var password = await InputPassswordDialog.show(context, accountInfo);
       // var password = '111111111';
       if (password.isNotEmpty) {
-        Loading.show(context);
+        LoadingTransfer.show(context);
         var privateKey = await JsChainLib.privateKeyFromKeyStore(
             accountInfo.keystore, password);
         try {
@@ -100,7 +101,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
             privateKey: privateKey,
           );
           print(res);
-          Loading.hide(context);
+          LoadingTransfer.hide(context);
           if (res['confirmed']) {
             showModal(
               context: context,
@@ -120,7 +121,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
             showModal(
               context: context,
               title:
-                  AppLocalizations.of(context).transferTokenConfirmModalTitle,
+                  AppLocalizations.of(context).transferTokenUnconfirmModalTitle,
               content: AppLocalizations.of(context)
                       .transferTokenUnconfirmModalContent +
                   res['hash'],
@@ -146,7 +147,7 @@ class _TransferTokenPageState extends State<TransferTokenPage> {
             );
           }
         } catch (e) {
-          Loading.hide(context);
+          LoadingTransfer.hide(context);
           print(e);
         }
       }

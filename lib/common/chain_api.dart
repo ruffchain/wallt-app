@@ -4,6 +4,8 @@ import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'package:ruff_wallet/common/config.dart' as Config;
 
+const int WAIT_CYCLES = 15;
+
 class ChainApi {
   static Future callRpc(String funName, args) async {
     var body = jsonEncode({"funName": funName, "args": args});
@@ -37,7 +39,7 @@ class ChainApi {
 
   static Future<bool> checkReceipt(String hash) async {
     await Future.delayed(Duration(seconds: 1));
-    for (var i = 0; i < 10; i++) {
+    for (var i = 0; i < WAIT_CYCLES; i++) {
       print(i);
       try {
         var res = await getTransaction(hash);

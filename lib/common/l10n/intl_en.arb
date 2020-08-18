@@ -430,7 +430,7 @@
     "type": "text",
     "placeholders": {}
   },
-  "transferTokenConfirmModalContent": "Transaction Hash",
+  "transferTokenConfirmModalContent": "Transaction Succeeds! Hash ",
   "@transferTokenConfirmModalContent": {
     "type": "text",
     "placeholders": {}
@@ -737,6 +737,36 @@
   },
   "walletListEmpty": "Asset list is empty",
   "@walletListEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "loadingTransferText": "\nPlease wait 20~40 seconds\nfor the transaction to be executed.",
+  "@loadingTransferText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgText": "Please Enter Wallet Password",
+  "@inputPasswordDlgText": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgEmpty": "Password is Empty",
+  "@inputPasswordDlgEmpty": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgWrong": "Password is Wrong",
+  "@inputPasswordDlgWrong": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgCancel": "Cancel",
+  "@inputPasswordDlgCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "inputPasswordDlgConfirm": "Confirm",
+  "@inputPasswordDlgConfirm": {
     "type": "text",
     "placeholders": {}
   }
