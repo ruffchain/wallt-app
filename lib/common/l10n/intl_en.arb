@@ -685,6 +685,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "mineVersion122": "Fix: English version",
+  "@mineVersion122": {
+    "type": "text",
+    "placeholders": {}
+  },
   "mineVersion121": "Fix: address validation issue",
   "@mineVersion121": {
     "type": "text",
@@ -767,6 +772,16 @@
   },
   "inputPasswordDlgConfirm": "Confirm",
   "@inputPasswordDlgConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogCancel": "Cancel",
+  "@confirmDialogCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogConfirm": "Confirm",
+  "@confirmDialogConfirm": {
     "type": "text",
     "placeholders": {}
   }

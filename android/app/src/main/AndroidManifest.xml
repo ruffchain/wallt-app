@@ -10,7 +10,7 @@
     
     <application
         android:name="io.flutter.app.FlutterApplication"
-        android:label="Ruff 钱包"
+        android:label="Ruff Wallet"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

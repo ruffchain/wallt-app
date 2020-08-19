@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-18T14:49:36.819907",
+  "@@last_modified": "2020-08-20T15:07:16.168786",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -681,6 +681,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "mineVersion122": "Fix: English version",
+  "@mineVersion122": {
+    "type": "text",
+    "placeholders": {}
+  },
   "mineVersion121": "Fix: address validation issue",
   "@mineVersion121": {
     "type": "text",
@@ -763,6 +768,16 @@
   },
   "inputPasswordDlgConfirm": "Confirm",
   "@inputPasswordDlgConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogCancel": "Cancel",
+  "@confirmDialogCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogConfirm": "Confirm",
+  "@confirmDialogConfirm": {
     "type": "text",
     "placeholders": {}
   }

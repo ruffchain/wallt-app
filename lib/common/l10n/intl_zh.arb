@@ -686,6 +686,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "mineVersion122": "修复: English 版本",
+  "@mineVersion122": {
+    "type": "text",
+    "placeholders": {}
+  },
   "mineVersion121": "修复：地址有效性验证的问题",
   "@mineVersion121": {
     "type": "text",
@@ -768,6 +773,16 @@
   },
   "inputPasswordDlgConfirm": "确定",
   "@inputPasswordDlgConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogCancel": "取消",
+  "@confirmDialogCancel": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "confirmDialogConfirm": "确定",
+  "@confirmDialogConfirm": {
     "type": "text",
     "placeholders": {}
   }

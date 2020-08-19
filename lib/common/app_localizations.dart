@@ -635,6 +635,10 @@ class AppLocalizations {
     return Intl.message("Version", name: 'mineVersionVer');
   }
 
+  String get mineVersion122 {
+    return Intl.message("Fix: English version", name: 'mineVersion122');
+  }
+
   String get mineVersion121 {
     return Intl.message("Fix: address validation issue",
         name: 'mineVersion121');
@@ -710,6 +714,14 @@ class AppLocalizations {
 
   String get inputPasswordDlgConfirm {
     return Intl.message("Confirm", name: 'inputPasswordDlgConfirm');
+  }
+
+  String get confirmDialogCancel {
+    return Intl.message("Cancel", name: 'confirmDialogCancel');
+  }
+
+  String get confirmDialogConfirm {
+    return Intl.message("Confirm", name: 'confirmDialogConfirm');
   }
 }
 

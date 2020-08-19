@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:ruff_wallet/common/constant.dart';
+import '../common/app_localizations.dart';
 
 showModal({
   @required BuildContext context,
   String title,
   String content,
   bool showCancel = true,
-  String cancelText = '取消',
+  String cancelText = "取消",
   String confirmText = "确定",
   bool autoClose = true,
   Function confirm,
@@ -52,7 +53,7 @@ showModal({
                         if (confirm != null) confirm(true);
                       },
                       child: Text(
-                        confirmText,
+                        AppLocalizations.of(context).confirmDialogConfirm,
                         style: TextStyle(
                           color: AppPrimaryColor,
                           fontSize: 18.0,
@@ -73,7 +74,7 @@ showModal({
                           if (confirm != null) confirm(false);
                         },
                         child: Text(
-                          cancelText,
+                          AppLocalizations.of(context).confirmDialogCancel,
                           style: TextStyle(fontSize: 18.0),
                         ),
                       ),
