@@ -20,6 +20,14 @@ class _VersionLogPageState extends State<VersionLogPage> {
         child: Column(
           children: <Widget>[
             _buildLogRow(
+              '1.2.3 ' +
+                  AppLocalizations.of(context).mineVersionVer +
+                  '（2020.08.23）',
+              [
+                AppLocalizations.of(context).mineVersion123,
+              ],
+            ),
+            _buildLogRow(
               '1.2.2 ' +
                   AppLocalizations.of(context).mineVersionVer +
                   '（2020.08.20）',

@@ -5,7 +5,11 @@ const ChainRpcUrl = 'https://mainnet.ruffchain.com/chain-rpc';
 const ChainInfoRpcUrl = 'https://mainnet.ruffchain.com/chain-info-rpc';
 
 // 隐私条款的网页地址
-const TermsUrl = 'https://ruffchain.com/wallet/terms.html';
+// const TermsUrl = AppLocalizations.of(context).configTermsUrl;
+// https://ruffchain.com/wallet/terms.html
+
+// 隐私条款的英文版
+// const TermsUrlEn = 'https://ruffchain.com/wallet/terms_en.html';
 
 // app更新版本信息
 const VersionInfoUrl = 'https://ruffchain.com/wallet/version.json';

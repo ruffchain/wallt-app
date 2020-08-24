@@ -635,6 +635,11 @@ class AppLocalizations {
     return Intl.message("Version", name: 'mineVersionVer');
   }
 
+  String get mineVersion123 {
+    return Intl.message("Fix: App name, privacy agreement",
+        name: 'mineVersion123');
+  }
+
   String get mineVersion122 {
     return Intl.message("Fix: English version", name: 'mineVersion122');
   }
@@ -722,6 +727,11 @@ class AppLocalizations {
 
   String get confirmDialogConfirm {
     return Intl.message("Confirm", name: 'confirmDialogConfirm');
+  }
+
+  String get configTermsUrl {
+    return Intl.message("https://ruffchain.com/wallet/terms_en.html",
+        name: 'configTermsUrl');
   }
 }
 

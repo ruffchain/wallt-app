@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-20T15:07:16.168786",
+  "@@last_modified": "2020-08-24T15:24:59.377797",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -681,6 +681,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "mineVersion123": "Fix: App name",
+  "@mineVersion123": {
+    "type": "text",
+    "placeholders": {}
+  },
   "mineVersion122": "Fix: English version",
   "@mineVersion122": {
     "type": "text",
@@ -778,6 +783,11 @@
   },
   "confirmDialogConfirm": "Confirm",
   "@confirmDialogConfirm": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "configTermsUrl": "https://ruffchain.com/wallet/terms_en.html",
+  "@configTermsUrl": {
     "type": "text",
     "placeholders": {}
   }

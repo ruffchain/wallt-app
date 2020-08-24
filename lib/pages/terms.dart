@@ -85,7 +85,8 @@ class _TermsPageState extends State<TermsPage> {
             )
           else
             InAppWebView(
-              initialUrl: Config.TermsUrl,
+              // initialUrl: Config.TermsUrl,
+              initialUrl: AppLocalizations.of(context).configTermsUrl,
               onLoadError: (InAppWebViewController controller, String url,
                   int code, String message) {
                 setState(() {
