@@ -1,5 +1,5 @@
 {
-  "@@last_modified": "2020-08-24T15:24:59.377797",
+  "@@last_modified": "2020-10-10T15:15:50.477920",
   "title": "Hello world App",
   "@title": {
     "description": "The application title",
@@ -681,7 +681,12 @@
     "type": "text",
     "placeholders": {}
   },
-  "mineVersion123": "Fix: App name",
+  "mineVersion124": "Fix: ios input text paste issue",
+  "@mineVersion124": {
+    "type": "text",
+    "placeholders": {}
+  },
+  "mineVersion123": "Fix: App name, privacy agreement",
   "@mineVersion123": {
     "type": "text",
     "placeholders": {}

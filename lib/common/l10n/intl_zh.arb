@@ -686,6 +686,11 @@
     "type": "text",
     "placeholders": {}
   },
+  "mineVersion124": "修复: ios input text paste issue",
+  "@mineVersion124": {
+    "type": "text",
+    "placeholders": {}
+  },
   "mineVersion123": "修复: App name",
   "@mineVersion123": {
     "type": "text",

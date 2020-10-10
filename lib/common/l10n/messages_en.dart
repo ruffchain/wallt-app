@@ -124,6 +124,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "mineVersion121" : MessageLookupByLibrary.simpleMessage("Fix: address validation issue"),
     "mineVersion122" : MessageLookupByLibrary.simpleMessage("Fix: English version"),
     "mineVersion123" : MessageLookupByLibrary.simpleMessage("Fix: App name"),
+    "mineVersion124" : MessageLookupByLibrary.simpleMessage("Fix: ios input text paste issue"),
     "mineVersionLogTitle" : MessageLookupByLibrary.simpleMessage("Version Log"),
     "mineVersionVer" : MessageLookupByLibrary.simpleMessage("Version"),
     "receiveTokenQRCode" : MessageLookupByLibrary.simpleMessage("Scan QR code to transfer token to me"),

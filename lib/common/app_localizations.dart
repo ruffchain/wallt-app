@@ -635,6 +635,11 @@ class AppLocalizations {
     return Intl.message("Version", name: 'mineVersionVer');
   }
 
+  String get mineVersion124 {
+    return Intl.message("Fix: ios input text paste issue",
+        name: 'mineVersion124');
+  }
+
   String get mineVersion123 {
     return Intl.message("Fix: App name, privacy agreement",
         name: 'mineVersion123');

@@ -19,6 +19,7 @@ import 'package:ruff_wallet/pages/transaction_history/detail.dart';
 import 'package:ruff_wallet/pages/transaction_history/index.dart';
 import 'package:ruff_wallet/pages/transfer_token.dart';
 
+import 'localizations.dart';
 import 'pages/splash.dart';
 import 'pages/init_wallet.dart';
 import 'pages/create_wallet.dart';
@@ -51,7 +52,8 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: [
         AppLocalizationsDelegate(),
         GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate
+        GlobalWidgetsLocalizations.delegate,
+        ChineseCupertinoLocalizations.delegate
       ],
       supportedLocales: [Locale("en"), Locale("zh")],
       onGenerateTitle: (BuildContext context) =>
